@@ -1,15 +1,37 @@
 [ {
   "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
+    }, {
+      "@id" : "http://www.prostep.org/ontologies/tlo/Plan"
+    }, {
+      "@id" : "http://www.prostep.org/ontologies/tlo/Product"
+    }, {
+      "@id" : "http://www.prostep.org/ontologies/tlo/Project"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "http://www.prostep.org/ontologies/datamodel#FunctionalModel"
+      "@id" : "http://www.prostep.org/ontologies/tlo/Model"
     }, {
-      "@id" : "http://www.prostep.org/ontologies/datamodel#GeometricalModel"
+      "@id" : "http://www.prostep.org/ontologies/tlo/Requirement"
     }, {
-      "@id" : "http://www.prostep.org/ontologies/datamodel#SimulationModel"
+      "@id" : "http://www.prostep.org/ontologies/tlo/Result"
     }, {
-      "@id" : "http://www.prostep.org/ontologies/datamodel#SystemModel"
+      "@id" : "http://www.prostep.org/ontologies/tlo/Run"
+    }, {
+      "@id" : "http://www.prostep.org/ontologies/tlo/Task"
+    }, {
+      "@id" : "http://www.prostep.org/ontologies/tlo/TechnicalPart"
+    }, {
+      "@id" : "http://www.prostep.org/ontologies/tlo/Test"
+    }, {
+      "@id" : "http://www.prostep.org/ontologies/tlo/UseCase"
     } ]
   } ]
 }, {
@@ -17,21 +39,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "http://www.prostep.org/ontologies/datamodel#Model"
+      "@id" : "http://www.prostep.org/ontologies/tlo/FunctionalModel"
     }, {
-      "@id" : "http://www.prostep.org/ontologies/datamodel#Requirement"
+      "@id" : "http://www.prostep.org/ontologies/tlo/GeometricalModel"
     }, {
-      "@id" : "http://www.prostep.org/ontologies/datamodel#Result"
+      "@id" : "http://www.prostep.org/ontologies/tlo/SimulationModel"
     }, {
-      "@id" : "http://www.prostep.org/ontologies/datamodel#Run"
-    }, {
-      "@id" : "http://www.prostep.org/ontologies/datamodel#Task"
-    }, {
-      "@id" : "http://www.prostep.org/ontologies/datamodel#TechnicalPart"
-    }, {
-      "@id" : "http://www.prostep.org/ontologies/datamodel#Test"
-    }, {
-      "@id" : "http://www.prostep.org/ontologies/datamodel#UseCase"
+      "@id" : "http://www.prostep.org/ontologies/tlo/SystemModel"
     } ]
   } ]
 }, {
@@ -44,13 +58,10 @@
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#",
+  "@id" : "http://www.prostep.org/ontologies/tlo/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "prostep ivip"
-  } ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Ontology code created by Chowlk"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@value" : "TopLevel DataModel Ontology"
@@ -59,223 +70,346 @@
     "@value" : "0.0.1"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement",
+  "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abstract super-element from which (all) elements are derived, which are exchanged or linked."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Collaboration Element"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#Configuration",
+  "@id" : "http://www.prostep.org/ontologies/tlo/Configuration",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abstract element that describes attributes, properties and relations that apply to all configurable elements."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Configuration"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#Criteria",
+  "@id" : "http://www.prostep.org/ontologies/tlo/Criteria",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Criteria are derived from requirements and are used to validate results."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Criteria"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#FunctionalModel",
+  "@id" : "http://www.prostep.org/ontologies/tlo/FunctionalModel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Conceptual model of the collaboration element at the functional level."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Functional Model"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Model"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Model"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#GeometricalModel",
+  "@id" : "http://www.prostep.org/ontologies/tlo/GeometricalModel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Conceptual model of the collaboration element at the geometrical level."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Geometrical Model"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Model"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Model"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#Interface",
+  "@id" : "http://www.prostep.org/ontologies/tlo/Interface",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a generic interface of a system component."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Interface"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#Model",
+  "@id" : "http://www.prostep.org/ontologies/tlo/Model",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Conceptual model of the collaboration element."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Model"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#Plan",
+  "@id" : "http://www.prostep.org/ontologies/tlo/Plan",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Structured conception of the way in which a particular goal is to be pursued, a particular task or project is to be realized. Includes intermediate and final results to be achieved with a timeline of how and when they will be achieved."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Plan"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#Product",
+  "@id" : "http://www.prostep.org/ontologies/tlo/Product",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The project result that is generated based on the (customer) requirements within a project."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Product"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#Project",
+  "@id" : "http://www.prostep.org/ontologies/tlo/Project",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A project is a temporary endeavour undertaken to create a unique product, service, or result."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Project"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#Requirement",
+  "@id" : "http://www.prostep.org/ontologies/tlo/Requirement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A singular documented physical or functional need that a particular design, product or process aims to satisfy."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Requirement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#ResponsiblePerson",
+  "@id" : "http://www.prostep.org/ontologies/tlo/ResponsiblePerson",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A natural person."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Responsible Person"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#Result",
+  "@id" : "http://www.prostep.org/ontologies/tlo/Result",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The result of a particular test (run), which is intended to verify the fulfillment of requirements."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Result"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#Run",
+  "@id" : "http://www.prostep.org/ontologies/tlo/Run",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A single iteration of a test or UseCase verification."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Run"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#SimulationModel",
+  "@id" : "http://www.prostep.org/ontologies/tlo/SimulationModel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Conceptual model of the collaboration element at the simulation level."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Simulation Model"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Model"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Model"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#Structure",
+  "@id" : "http://www.prostep.org/ontologies/tlo/Structure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Structure of an element."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Structure"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#SystemModel",
+  "@id" : "http://www.prostep.org/ontologies/tlo/SystemModel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Conceptual model of the collaboration element at the system level."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "System Model"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Model"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Model"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#Task",
+  "@id" : "http://www.prostep.org/ontologies/tlo/Task",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A task is a definite piece of work assigned to a person or organisation."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#TechnicalPart",
+  "@id" : "http://www.prostep.org/ontologies/tlo/TechnicalPart",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A physical/technical component of the product. A part can be a real mechatronic component, but also a software part."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Technical Part"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#Test",
+  "@id" : "http://www.prostep.org/ontologies/tlo/Test",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Checking whether an object behaves as expected under conditions that are as realistic as possible and meets the requirements."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Test"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#UseCase",
+  "@id" : "http://www.prostep.org/ontologies/tlo/UseCase",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific situation in which a product or service could potentially be used."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Use Case"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#Variation",
+  "@id" : "http://www.prostep.org/ontologies/tlo/Variation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Variations are subsets of attributes derived from the structure and defined by the requirements that affect the configuration."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Variation"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#Version",
+  "@id" : "http://www.prostep.org/ontologies/tlo/Version",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The state of an Collaboration Element."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "Version"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#View",
+  "@id" : "http://www.prostep.org/ontologies/tlo/View",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A view is a specific perspective on a specific version of a collaboration element."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
     "@value" : "View"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#affects",
+  "@id" : "http://www.prostep.org/ontologies/tlo/affects",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Variation"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Variation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "affects"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Requirement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Requirement"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#assignedTo",
+  "@id" : "http://www.prostep.org/ontologies/tlo/assignedTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Task"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Task"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "assigned to"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#ResponsiblePerson"
+    "@id" : "http://www.prostep.org/ontologies/tlo/ResponsiblePerson"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#basisFor",
+  "@id" : "http://www.prostep.org/ontologies/tlo/basisFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Variation"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Variation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "basis for"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Configuration"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Configuration"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#configParameter",
+  "@id" : "http://www.prostep.org/ontologies/tlo/configParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Configuration"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Configuration"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "config parameter"
@@ -284,64 +418,70 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#anyType"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#configurableBy",
+  "@id" : "http://www.prostep.org/ontologies/tlo/configurableBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "configurable by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Configuration"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Configuration"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#consistsOf",
+  "@id" : "http://www.prostep.org/ontologies/tlo/consistsOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Run"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Run"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "consists of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Task"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Task"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#definedBy",
+  "@id" : "http://www.prostep.org/ontologies/tlo/definedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Criteria"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Criteria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "defined by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.prostep.org/ontologies/tlo/Requirement"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#defines",
+  "@id" : "http://www.prostep.org/ontologies/tlo/defines",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Requirement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Requirement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "defines"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Variation"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Variation"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#derivedFrom",
+  "@id" : "http://www.prostep.org/ontologies/tlo/derivedFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.prostep.org/ontologies/tlo/Requirement"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "derived from"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Requirement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Requirement"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#description",
+  "@id" : "http://www.prostep.org/ontologies/tlo/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "description"
@@ -350,10 +490,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#end",
+  "@id" : "http://www.prostep.org/ontologies/tlo/end",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Product"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Product"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "end"
@@ -362,94 +502,94 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#focusOn",
+  "@id" : "http://www.prostep.org/ontologies/tlo/focusOn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Project"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Project"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "focus on"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Product"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Product"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#fullfill",
+  "@id" : "http://www.prostep.org/ontologies/tlo/fullfill",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Result"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Result"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "fullfill"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Criteria"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Criteria"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#hasPlan",
+  "@id" : "http://www.prostep.org/ontologies/tlo/hasPlan",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Project"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Project"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has plan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Plan"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Plan"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#hasSpecific",
+  "@id" : "http://www.prostep.org/ontologies/tlo/hasSpecific",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Version"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Version"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has specific"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Configuration"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Configuration"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#hasSubElement",
+  "@id" : "http://www.prostep.org/ontologies/tlo/hasSubElement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has sub element"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#hasSubstructure",
+  "@id" : "http://www.prostep.org/ontologies/tlo/hasSubstructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Structure"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Structure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has substructure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Structure"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Structure"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#hasVersion",
+  "@id" : "http://www.prostep.org/ontologies/tlo/hasVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has version"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Version"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Version"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#identifier",
+  "@id" : "http://www.prostep.org/ontologies/tlo/identifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "identifier"
@@ -458,31 +598,34 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#isPartOf",
+  "@id" : "http://www.prostep.org/ontologies/tlo/isPartOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#TechnicalPart"
+    "@id" : "http://www.prostep.org/ontologies/tlo/TechnicalPart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is part of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.prostep.org/ontologies/tlo/Product"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#isRelatedTo",
+  "@id" : "http://www.prostep.org/ontologies/tlo/isRelatedTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Model"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Model"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is related to"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Product"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Product"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#name",
+  "@id" : "http://www.prostep.org/ontologies/tlo/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Product"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Product"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "name"
@@ -491,10 +634,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#number",
+  "@id" : "http://www.prostep.org/ontologies/tlo/number",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "number"
@@ -503,76 +646,107 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#performedWith",
+  "@id" : "http://www.prostep.org/ontologies/tlo/performedWith",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Run"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Run"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "performed with"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Version"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Version"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#realizedBy",
+  "@id" : "http://www.prostep.org/ontologies/tlo/plannedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Interface"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "planned by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.prostep.org/ontologies/tlo/Plan"
+  } ]
+}, {
+  "@id" : "http://www.prostep.org/ontologies/tlo/realizedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.prostep.org/ontologies/tlo/Interface"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "realized by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#refersTo",
+  "@id" : "http://www.prostep.org/ontologies/tlo/refersTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Requirement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Requirement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "refers to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.prostep.org/ontologies/tlo/Product"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#relatesTo",
+  "@id" : "http://www.prostep.org/ontologies/tlo/relatesTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#View"
+    "@id" : "http://www.prostep.org/ontologies/tlo/View"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "relates to"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#satisfiedBy",
+  "@id" : "http://www.prostep.org/ontologies/tlo/satisfiedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#UseCase"
+    "@id" : "http://www.prostep.org/ontologies/tlo/UseCase"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "satisfied by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Requirement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Requirement"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#specificFor",
+  "@id" : "http://www.prostep.org/ontologies/tlo/scheduledBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#View"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Run"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "scheduled by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.prostep.org/ontologies/tlo/Plan"
+  } ]
+}, {
+  "@id" : "http://www.prostep.org/ontologies/tlo/specificFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.prostep.org/ontologies/tlo/View"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "specific for"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.prostep.org/ontologies/tlo/Version"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#start",
+  "@id" : "http://www.prostep.org/ontologies/tlo/start",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Product"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Product"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "start"
@@ -581,44 +755,46 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#status",
+  "@id" : "http://www.prostep.org/ontologies/tlo/status",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Version"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Version"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#structurableBy",
+  "@id" : "http://www.prostep.org/ontologies/tlo/structurableBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Plan"
-  }, {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Product"
-  }, {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Project"
+    "@id" : "_:genid1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "structurable by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Structure"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Structure"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#targetOf",
+  "@id" : "http://www.prostep.org/ontologies/tlo/targetOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.prostep.org/ontologies/tlo/TechnicalPart"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "target of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Requirement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Requirement"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#title",
+  "@id" : "http://www.prostep.org/ontologies/tlo/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "title"
@@ -627,40 +803,40 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#usageDefinedBy",
+  "@id" : "http://www.prostep.org/ontologies/tlo/usageDefinedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Product"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Product"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "usage defined by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#UseCase"
+    "@id" : "http://www.prostep.org/ontologies/tlo/UseCase"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#uses",
+  "@id" : "http://www.prostep.org/ontologies/tlo/uses",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement"
+    "@id" : "http://www.prostep.org/ontologies/tlo/CollaborationElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "uses"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Interface"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Interface"
   } ]
 }, {
-  "@id" : "http://www.prostep.org/ontologies/datamodel#variedBy",
+  "@id" : "http://www.prostep.org/ontologies/tlo/variedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Structure"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Structure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "varied by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.prostep.org/ontologies/datamodel#Variation"
+    "@id" : "http://www.prostep.org/ontologies/tlo/Variation"
   } ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#anyType",

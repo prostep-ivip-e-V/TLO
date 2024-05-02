@@ -1,17 +1,14 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
-    "languages" : [ "undefined" ],
-    "baseIris" : [ "http://www.prostep.org/ontologies/datamodel", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.prostep.org/ontologies/tlo", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
       "undefined" : "TopLevel DataModel Ontology"
     },
-    "iri" : "http://www.prostep.org/ontologies/datamodel#",
+    "iri" : "http://www.prostep.org/ontologies/tlo/",
     "version" : "0.0.1",
     "author" : [ "prostep ivip" ],
-    "description" : {
-      "undefined" : "Ontology code created by Chowlk"
-    },
     "other" : {
       "creator" : [ {
         "identifier" : "creator",
@@ -35,529 +32,568 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "3",
-    "type" : "owl:Class"
-  }, {
-    "id" : "12",
-    "type" : "owl:Class"
-  }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "31",
-    "type" : "owl:Class"
-  }, {
-    "id" : "33",
-    "type" : "owl:Class"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
     "id" : "25",
-    "type" : "owl:Class"
-  }, {
-    "id" : "49",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "14",
-    "type" : "owl:Class"
-  }, {
-    "id" : "68",
-    "type" : "owl:Class"
-  }, {
-    "id" : "64",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "23",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "7",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "60",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "72",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "74",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "55",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "69",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
-    "type" : "owl:Class"
-  }, {
-    "id" : "76",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "66",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "80",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "53",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "81",
-    "type" : "owl:Class"
-  }, {
-    "id" : "82",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "47",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "32",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
     "type" : "owl:Class"
   }, {
     "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "88",
+    "id" : "57",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "39",
     "type" : "owl:Class"
   }, {
-    "id" : "27",
+    "id" : "67",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
     "type" : "owl:Class"
   }, {
     "id" : "62",
     "type" : "owl:Class"
   }, {
-    "id" : "87",
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#Requirement",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Requirement",
-      "undefined" : "Requirement"
-    },
-    "id" : "3",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#TechnicalPart",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "TechnicalPart",
-      "undefined" : "Technical Part"
-    },
-    "id" : "12",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#Product",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Product",
-      "undefined" : "Product"
-    },
-    "id" : "16"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#GeometricalModel",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
+    "iri" : "http://www.prostep.org/ontologies/tlo/GeometricalModel",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
     "instances" : 0,
     "label" : {
       "IRI-based" : "GeometricalModel",
-      "undefined" : "Geometrical Model"
+      "en" : "Geometrical Model"
     },
-    "id" : "31",
-    "superClasses" : [ "32" ]
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#SystemModel",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SystemModel",
-      "undefined" : "System Model"
+    "comment" : {
+      "en" : "Conceptual model of the collaboration element at the geometrical level."
     },
-    "id" : "33",
-    "superClasses" : [ "32" ]
+    "id" : "25",
+    "superClasses" : [ "26" ]
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#CollaborationElement",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "CollaborationElement",
-      "undefined" : "Collaboration Element"
-    },
-    "subClasses" : [ "32", "10", "3", "12", "2", "27", "18" ],
-    "id" : "4"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#Structure",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Structure",
-      "undefined" : "Structure"
-    },
-    "id" : "25"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#Plan",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
+    "iri" : "http://www.prostep.org/ontologies/tlo/Plan",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Plan",
-      "undefined" : "Plan"
+      "en" : "Plan"
     },
-    "id" : "49"
+    "comment" : {
+      "en" : "Structured conception of the way in which a particular goal is to be pursued, a particular task or project is to be realized. Includes intermediate and final results to be achieved with a timeline of how and when they will be achieved."
+    },
+    "id" : "35"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#UseCase",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
+    "iri" : "http://www.prostep.org/ontologies/tlo/Criteria",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "UseCase",
-      "undefined" : "Use Case"
+      "IRI-based" : "Criteria",
+      "en" : "Criteria"
     },
-    "id" : "2",
-    "superClasses" : [ "4" ]
+    "comment" : {
+      "en" : "Criteria are derived from requirements and are used to validate results."
+    },
+    "id" : "57"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#Variation",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
+    "iri" : "http://www.prostep.org/ontologies/tlo/Interface",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Variation",
-      "undefined" : "Variation"
+      "IRI-based" : "Interface",
+      "en" : "Interface"
     },
-    "id" : "14"
-  }, {
-    "instances" : 0,
-    "union" : [ "16", "69", "49" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "68"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "64",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "23",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "7",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "60",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "72",
-    "label" : {
-      "undefined" : "Thing"
-    }
+    "comment" : {
+      "en" : "Represents a generic interface of a system component."
+    },
+    "id" : "39"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "74",
+    "id" : "67",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/Project",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Project",
+      "en" : "Project"
+    },
+    "comment" : {
+      "en" : "A project is a temporary endeavour undertaken to create a unique product, service, or result."
+    },
+    "id" : "70"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/UseCase",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UseCase",
+      "en" : "Use Case"
+    },
+    "comment" : {
+      "en" : "A specific situation in which a product or service could potentially be used."
+    },
+    "id" : "2",
+    "superClasses" : [ "40" ]
+  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#date",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "55",
+    "id" : "33",
     "label" : {
       "IRI-based" : "date"
     }
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#Project",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Project",
-      "undefined" : "Project"
-    },
-    "id" : "69"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#Configuration",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Configuration",
-      "undefined" : "Configuration"
-    },
-    "id" : "15"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#Criteria",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Criteria",
-      "undefined" : "Criteria"
-    },
-    "id" : "45"
-  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "76",
+    "id" : "77",
     "label" : {
       "IRI-based" : "nonNegativeInteger"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#date",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "66",
+    "iri" : "http://www.prostep.org/ontologies/tlo/TechnicalPart",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "instances" : 0,
     "label" : {
-      "IRI-based" : "date"
-    }
+      "IRI-based" : "TechnicalPart",
+      "en" : "Technical Part"
+    },
+    "comment" : {
+      "en" : "A physical/technical component of the product. A part can be a real mechatronic component, but also a software part."
+    },
+    "id" : "15",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/Product",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Product",
+      "en" : "Product"
+    },
+    "comment" : {
+      "en" : "The project result that is generated based on the (customer) requirements within a project."
+    },
+    "id" : "9"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "80",
+    "id" : "76",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "53",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#ResponsiblePerson",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
+    "iri" : "http://www.prostep.org/ontologies/tlo/ResponsiblePerson",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
     "instances" : 0,
     "label" : {
       "IRI-based" : "ResponsiblePerson",
-      "undefined" : "Responsible Person"
+      "en" : "Responsible Person"
     },
-    "id" : "81"
+    "comment" : {
+      "en" : "A natural person."
+    },
+    "id" : "83"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "82",
+    "id" : "85",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/Configuration",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Configuration",
+      "en" : "Configuration"
+    },
+    "comment" : {
+      "en" : "Abstract element that describes attributes, properties and relations that apply to all configurable elements."
+    },
+    "id" : "7"
+  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyType",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "47",
+    "id" : "37",
     "label" : {
       "IRI-based" : "anyType"
     }
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#Model",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
     "label" : {
-      "IRI-based" : "Model",
-      "undefined" : "Model"
-    },
-    "subClasses" : [ "31", "87", "33", "88" ],
-    "id" : "32",
-    "superClasses" : [ "4" ]
+      "IRI-based" : "string"
+    }
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#Test",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
     "label" : {
-      "IRI-based" : "Test",
-      "undefined" : "Test"
-    },
-    "id" : "10",
-    "superClasses" : [ "4" ]
+      "IRI-based" : "date"
+    }
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#Task",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
+    "instances" : 0,
+    "union" : [ "9", "40", "35", "70" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/Task",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Task",
-      "undefined" : "Task"
+      "en" : "Task"
     },
-    "id" : "1"
+    "comment" : {
+      "en" : "A task is a definite piece of work assigned to a person or organisation."
+    },
+    "id" : "1",
+    "superClasses" : [ "40" ]
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#Interface",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
+    "iri" : "http://www.prostep.org/ontologies/tlo/Variation",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Interface",
-      "undefined" : "Interface"
+      "IRI-based" : "Variation",
+      "en" : "Variation"
     },
-    "id" : "35"
+    "comment" : {
+      "en" : "Variations are subsets of attributes derived from the structure and defined by the requirements that affect the configuration."
+    },
+    "id" : "5"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#SimulationModel",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
+    "iri" : "http://www.prostep.org/ontologies/tlo/SimulationModel",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
     "instances" : 0,
     "label" : {
       "IRI-based" : "SimulationModel",
-      "undefined" : "Simulation Model"
+      "en" : "Simulation Model"
     },
-    "id" : "88",
-    "superClasses" : [ "32" ]
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#Version",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Version",
-      "undefined" : "Version"
+    "comment" : {
+      "en" : "Conceptual model of the collaboration element at the simulation level."
     },
-    "id" : "6"
+    "id" : "69",
+    "superClasses" : [ "26" ]
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#Result",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Result",
-      "undefined" : "Result"
-    },
-    "id" : "27",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#Run",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Run",
-      "undefined" : "Run"
-    },
-    "id" : "18",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#View",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
+    "iri" : "http://www.prostep.org/ontologies/tlo/View",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
     "instances" : 0,
     "label" : {
       "IRI-based" : "View",
-      "undefined" : "View"
+      "en" : "View"
+    },
+    "comment" : {
+      "en" : "A view is a specific perspective on a specific version of a collaboration element."
+    },
+    "id" : "42"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/Model",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Model",
+      "en" : "Model"
+    },
+    "subClasses" : [ "74", "69", "25", "60" ],
+    "comment" : {
+      "en" : "Conceptual model of the collaboration element."
+    },
+    "id" : "26",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/Result",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Result",
+      "en" : "Result"
+    },
+    "comment" : {
+      "en" : "The result of a particular test (run), which is intended to verify the fulfillment of requirements."
+    },
+    "id" : "23",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/Version",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Version",
+      "en" : "Version"
+    },
+    "comment" : {
+      "en" : "The state of an Collaboration Element."
     },
     "id" : "62"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#FunctionalModel",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
+    "iri" : "http://www.prostep.org/ontologies/tlo/Run",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Run",
+      "en" : "Run"
+    },
+    "comment" : {
+      "en" : "A single iteration of a test or UseCase verification."
+    },
+    "id" : "17",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/CollaborationElement",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CollaborationElement",
+      "en" : "Collaboration Element"
+    },
+    "subClasses" : [ "23", "15", "17", "2", "1", "26", "13", "4" ],
+    "comment" : {
+      "en" : "Abstract super-element from which (all) elements are derived, which are exchanged or linked."
+    },
+    "id" : "40"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/Test",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Test",
+      "en" : "Test"
+    },
+    "comment" : {
+      "en" : "Checking whether an object behaves as expected under conditions that are as realistic as possible and meets the requirements."
+    },
+    "id" : "13",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/Structure",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Structure",
+      "en" : "Structure"
+    },
+    "comment" : {
+      "en" : "Structure of an element."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/FunctionalModel",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
     "instances" : 0,
     "label" : {
       "IRI-based" : "FunctionalModel",
-      "undefined" : "Functional Model"
+      "en" : "Functional Model"
     },
-    "id" : "87",
-    "superClasses" : [ "32" ]
+    "comment" : {
+      "en" : "Conceptual model of the collaboration element at the functional level."
+    },
+    "id" : "74",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/SystemModel",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SystemModel",
+      "en" : "System Model"
+    },
+    "comment" : {
+      "en" : "Conceptual model of the collaboration element at the system level."
+    },
+    "id" : "60",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/Requirement",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Requirement",
+      "en" : "Requirement"
+    },
+    "comment" : {
+      "en" : "A singular documented physical or functional need that a particular design, product or process aims to satisfy."
+    },
+    "id" : "4",
+    "superClasses" : [ "40" ]
   } ],
   "property" : [ {
     "id" : "0",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "5",
-    "type" : "owl:datatypeProperty"
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "8",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "9",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "11",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "13",
+    "id" : "10",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "17",
+    "id" : "12",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "14",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "16",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "18",
     "type" : "owl:disjointWith"
   }, {
     "id" : "19",
     "type" : "owl:disjointWith"
   }, {
     "id" : "20",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "21",
     "type" : "owl:disjointWith"
   }, {
     "id" : "22",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "24",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "26",
+    "id" : "27",
     "type" : "owl:disjointWith"
   }, {
     "id" : "28",
     "type" : "owl:disjointWith"
   }, {
     "id" : "29",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "30",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "34",
     "type" : "owl:objectProperty"
   }, {
     "id" : "36",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "37",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "38",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "39",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "40",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "41",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "42",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "43",
     "type" : "owl:disjointWith"
   }, {
     "id" : "44",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "46",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
     "type" : "owl:disjointWith"
   }, {
     "id" : "50",
@@ -567,49 +603,52 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "52",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "54",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "56",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "57",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "58",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "59",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "61",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "63",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "65",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "67",
-    "type" : "owl:objectProperty"
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "70",
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "71",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "73",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "75",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "77",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "78",
     "type" : "owl:objectProperty"
@@ -617,23 +656,26 @@
     "id" : "79",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "83",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "84",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "85",
+    "id" : "81",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "86",
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "88",
     "type" : "owl:disjointWith"
   }, {
     "id" : "89",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "90",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "91",
     "type" : "owl:objectProperty"
@@ -642,43 +684,43 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "93",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "94",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "95",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "96",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "97",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "98",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "99",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "100",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "101",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "102",
+    "id" : "101",
     "type" : "owl:disjointWith"
   }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "103",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "104",
     "type" : "owl:disjointWith"
   }, {
     "id" : "105",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "106",
     "type" : "owl:disjointWith"
@@ -687,7 +729,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "108",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "109",
     "type" : "owl:disjointWith"
@@ -702,657 +744,681 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "113",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "114",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "115",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "116",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "117",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "118",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "119",
-    "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "0"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#status",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "7",
+    "iri" : "http://www.prostep.org/ontologies/tlo/defines",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "5",
     "label" : {
-      "IRI-based" : "status",
-      "undefined" : "status"
-    },
-    "domain" : "6",
-    "attributes" : [ "datatype" ],
-    "id" : "5"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#hasSubElement",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "hasSubElement",
-      "undefined" : "has sub element"
+      "IRI-based" : "defines",
+      "undefined" : "defines"
     },
     "domain" : "4",
     "attributes" : [ "object" ],
-    "id" : "8"
+    "id" : "3"
   }, {
-    "range" : "10",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "9"
-  }, {
-    "range" : "12",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "11"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#basisFor",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "15",
+    "iri" : "http://www.prostep.org/ontologies/tlo/basisFor",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "7",
     "label" : {
       "IRI-based" : "basisFor",
       "undefined" : "basis for"
     },
-    "domain" : "14",
+    "domain" : "5",
     "attributes" : [ "object" ],
-    "id" : "13"
+    "id" : "6"
   }, {
-    "range" : "12",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "17"
-  }, {
-    "range" : "1",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "19"
-  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/usageDefinedBy",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
     "range" : "2",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "20"
-  }, {
-    "range" : "10",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "21"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#isPartOf",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "23",
     "label" : {
-      "IRI-based" : "isPartOf",
-      "undefined" : "is part of"
+      "IRI-based" : "usageDefinedBy",
+      "undefined" : "usage defined by"
     },
-    "domain" : "12",
+    "domain" : "9",
     "attributes" : [ "object" ],
-    "id" : "22"
+    "id" : "8"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#hasSubstructure",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "25",
+    "iri" : "http://www.prostep.org/ontologies/tlo/hasSubstructure",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "11",
     "label" : {
       "IRI-based" : "hasSubstructure",
       "undefined" : "has substructure"
     },
-    "domain" : "25",
+    "domain" : "11",
     "attributes" : [ "object" ],
-    "id" : "24"
+    "id" : "10"
   }, {
-    "range" : "12",
-    "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "26"
+    "range" : "13",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "15",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "range" : "15",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
   }, {
     "range" : "1",
-    "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "28"
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
   }, {
     "range" : "2",
-    "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "29"
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
   }, {
-    "range" : "10",
-    "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "30"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#realizedBy",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "realizedBy",
-      "undefined" : "realized by"
-    },
-    "domain" : "35",
-    "attributes" : [ "object" ],
-    "id" : "34"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#variedBy",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "14",
+    "iri" : "http://www.prostep.org/ontologies/tlo/variedBy",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "5",
     "label" : {
       "IRI-based" : "variedBy",
       "undefined" : "varied by"
     },
-    "domain" : "25",
+    "domain" : "11",
     "attributes" : [ "object" ],
-    "id" : "36"
+    "id" : "20"
   }, {
-    "range" : "2",
-    "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "37"
+    "range" : "13",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
   }, {
-    "range" : "10",
-    "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "38"
-  }, {
-    "range" : "18",
-    "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "39"
-  }, {
-    "range" : "18",
-    "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "40"
-  }, {
-    "range" : "27",
-    "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "41"
-  }, {
-    "range" : "12",
-    "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "42"
+    "range" : "15",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
   }, {
     "range" : "1",
-    "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "43"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#fullfill",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "45",
-    "label" : {
-      "IRI-based" : "fullfill",
-      "undefined" : "fullfill"
-    },
-    "domain" : "27",
-    "attributes" : [ "object" ],
-    "id" : "44"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#configParameter",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "47",
-    "label" : {
-      "IRI-based" : "configParameter",
-      "undefined" : "config parameter"
-    },
-    "domain" : "15",
-    "attributes" : [ "datatype" ],
-    "id" : "46"
-  }, {
-    "range" : "12",
-    "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "48"
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
   }, {
     "range" : "2",
-    "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "50"
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
   }, {
-    "range" : "10",
-    "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "51"
+    "range" : "13",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#name",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "53",
+    "iri" : "http://www.prostep.org/ontologies/tlo/isPartOf",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "9",
     "label" : {
-      "IRI-based" : "name",
-      "undefined" : "name"
+      "IRI-based" : "isPartOf",
+      "undefined" : "is part of"
     },
-    "domain" : "16",
-    "attributes" : [ "datatype" ],
-    "id" : "52"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#start",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "55",
-    "label" : {
-      "IRI-based" : "start",
-      "undefined" : "start"
-    },
-    "domain" : "16",
-    "attributes" : [ "datatype" ],
-    "id" : "54"
-  }, {
-    "range" : "4",
-    "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "56"
-  }, {
-    "range" : "4",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "57"
-  }, {
-    "range" : "4",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "58"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#refersTo",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "60",
-    "label" : {
-      "IRI-based" : "refersTo",
-      "undefined" : "refers to"
-    },
-    "domain" : "3",
+    "domain" : "15",
     "attributes" : [ "object" ],
-    "id" : "59"
+    "id" : "29"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#relatesTo",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "relatesTo",
-      "undefined" : "relates to"
-    },
-    "domain" : "62",
-    "attributes" : [ "object" ],
-    "id" : "61"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#specificFor",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "64",
-    "label" : {
-      "IRI-based" : "specificFor",
-      "undefined" : "specific for"
-    },
-    "domain" : "62",
-    "attributes" : [ "object" ],
-    "id" : "63"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#end",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "66",
+    "iri" : "http://www.prostep.org/ontologies/tlo/end",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "31",
     "label" : {
       "IRI-based" : "end",
       "undefined" : "end"
     },
-    "domain" : "16",
+    "domain" : "9",
     "attributes" : [ "datatype" ],
-    "id" : "65"
+    "id" : "30"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#satisfiedBy",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "3",
+    "iri" : "http://www.prostep.org/ontologies/tlo/start",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "start",
+      "undefined" : "start"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/plannedBy",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "plannedBy",
+      "undefined" : "planned by"
+    },
+    "domain" : "13",
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/configParameter",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "configParameter",
+      "undefined" : "config parameter"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/realizedBy",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "realizedBy",
+      "undefined" : "realized by"
+    },
+    "domain" : "39",
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/relatesTo",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "relatesTo",
+      "undefined" : "relates to"
+    },
+    "domain" : "42",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "13",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "17",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "17",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "23",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "15",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "15",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "2",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "13",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "40",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "40",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "40",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/configurableBy",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "configurableBy",
+      "undefined" : "configurable by"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/satisfiedBy",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "4",
     "label" : {
       "IRI-based" : "satisfiedBy",
       "undefined" : "satisfied by"
     },
     "domain" : "2",
     "attributes" : [ "object" ],
-    "id" : "67"
+    "id" : "58"
   }, {
-    "range" : "4",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "70"
+    "range" : "26",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
   }, {
-    "range" : "4",
-    "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "http://www.prostep.org/ontologies/tlo/status",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "status",
+      "undefined" : "status"
+    },
+    "domain" : "62",
+    "attributes" : [ "datatype" ],
+    "id" : "61"
+  }, {
+    "range" : "26",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "40",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "range" : "40",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "26",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/hasSubElement",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasSubElement",
+      "undefined" : "has sub element"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
     "id" : "71"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#isRelatedTo",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "16",
+    "iri" : "http://www.prostep.org/ontologies/tlo/isRelatedTo",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "9",
     "label" : {
       "IRI-based" : "isRelatedTo",
       "undefined" : "is related to"
     },
-    "domain" : "32",
+    "domain" : "26",
     "attributes" : [ "object" ],
+    "id" : "72"
+  }, {
+    "range" : "26",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "73"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#number",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
+    "iri" : "http://www.prostep.org/ontologies/tlo/name",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
     "range" : "76",
     "label" : {
-      "IRI-based" : "number",
-      "undefined" : "number"
+      "IRI-based" : "name",
+      "undefined" : "name"
     },
-    "domain" : "4",
+    "domain" : "9",
     "attributes" : [ "datatype" ],
     "id" : "75"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#structurableBy",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "25",
+    "iri" : "http://www.prostep.org/ontologies/tlo/refersTo",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "refersTo",
+      "undefined" : "refers to"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/structurableBy",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "11",
     "label" : {
       "IRI-based" : "structurableBy",
       "undefined" : "structurable by"
     },
-    "domain" : "68",
+    "domain" : "80",
     "attributes" : [ "object" ],
-    "id" : "77"
+    "id" : "79"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#focusOn",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "16",
+    "iri" : "http://www.prostep.org/ontologies/tlo/focusOn",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "9",
     "label" : {
       "IRI-based" : "focusOn",
       "undefined" : "focus on"
     },
-    "domain" : "69",
+    "domain" : "70",
     "attributes" : [ "object" ],
-    "id" : "78"
+    "id" : "81"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#derivedFrom",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "3",
+    "iri" : "http://www.prostep.org/ontologies/tlo/derivedFrom",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "4",
     "label" : {
       "IRI-based" : "derivedFrom",
       "undefined" : "derived from"
     },
-    "domain" : "60",
+    "domain" : "4",
     "attributes" : [ "object" ],
-    "id" : "79"
+    "id" : "82"
   }, {
-    "range" : "2",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "83"
-  }, {
-    "range" : "10",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "http://www.prostep.org/ontologies/tlo/specificFor",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "specificFor",
+      "undefined" : "specific for"
+    },
+    "domain" : "42",
+    "attributes" : [ "object" ],
     "id" : "84"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#configurableBy",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "15",
-    "label" : {
-      "IRI-based" : "configurableBy",
-      "undefined" : "configurable by"
-    },
-    "domain" : "4",
-    "attributes" : [ "object" ],
-    "id" : "85"
-  }, {
     "range" : "2",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "86"
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#uses",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "35",
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/number",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "77",
     "label" : {
-      "IRI-based" : "uses",
-      "undefined" : "uses"
+      "IRI-based" : "number",
+      "undefined" : "number"
     },
-    "domain" : "4",
-    "attributes" : [ "object" ],
+    "domain" : "40",
+    "attributes" : [ "datatype" ],
     "id" : "89"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#definedBy",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "72",
+    "range" : "2",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/definedBy",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "4",
     "label" : {
       "IRI-based" : "definedBy",
       "undefined" : "defined by"
     },
-    "domain" : "45",
-    "attributes" : [ "object" ],
-    "id" : "90"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#hasVersion",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "hasVersion",
-      "undefined" : "has version"
-    },
-    "domain" : "4",
+    "domain" : "57",
     "attributes" : [ "object" ],
     "id" : "91"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#targetOf",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "3",
+    "iri" : "http://www.prostep.org/ontologies/tlo/uses",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "39",
     "label" : {
-      "IRI-based" : "targetOf",
-      "undefined" : "target of"
+      "IRI-based" : "uses",
+      "undefined" : "uses"
     },
-    "domain" : "60",
+    "domain" : "40",
     "attributes" : [ "object" ],
     "id" : "92"
   }, {
-    "range" : "32",
-    "domain" : "88",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "93"
-  }, {
-    "range" : "32",
-    "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "94"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#title",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "74",
-    "label" : {
-      "IRI-based" : "title",
-      "undefined" : "title"
-    },
-    "domain" : "4",
-    "attributes" : [ "datatype" ],
-    "id" : "95"
-  }, {
-    "range" : "4",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "96"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#hasPlan",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "49",
+    "iri" : "http://www.prostep.org/ontologies/tlo/hasPlan",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "35",
     "label" : {
       "IRI-based" : "hasPlan",
       "undefined" : "has plan"
     },
-    "domain" : "69",
+    "domain" : "70",
     "attributes" : [ "object" ],
-    "id" : "97"
+    "id" : "93"
   }, {
-    "range" : "4",
-    "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "98"
-  }, {
-    "range" : "32",
-    "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "99"
-  }, {
-    "range" : "32",
-    "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "100"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#consistsOf",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
+    "iri" : "http://www.prostep.org/ontologies/tlo/consistsOf",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
     "range" : "1",
     "label" : {
       "IRI-based" : "consistsOf",
       "undefined" : "consists of"
     },
-    "domain" : "18",
+    "domain" : "17",
     "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/targetOf",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "targetOf",
+      "undefined" : "target of"
+    },
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "range" : "40",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "range" : "40",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/scheduledBy",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "scheduledBy",
+      "en" : "scheduled by"
+    },
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "98"
+  }, {
+    "range" : "40",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/hasSpecific",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasSpecific",
+      "undefined" : "has specific"
+    },
+    "domain" : "62",
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "range" : "60",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "101"
   }, {
-    "range" : "33",
-    "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "http://www.prostep.org/ontologies/tlo/fullfill",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "fullfill",
+      "undefined" : "fullfill"
+    },
+    "domain" : "23",
+    "attributes" : [ "object" ],
     "id" : "102"
   }, {
-    "range" : "88",
-    "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "http://www.prostep.org/ontologies/tlo/title",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "title",
+      "undefined" : "title"
+    },
+    "domain" : "40",
+    "attributes" : [ "datatype" ],
     "id" : "103"
   }, {
-    "range" : "33",
-    "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "69",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "104"
   }, {
-    "range" : "33",
-    "domain" : "88",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "http://www.prostep.org/ontologies/tlo/hasVersion",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "hasVersion",
+      "undefined" : "has version"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
     "id" : "105"
   }, {
-    "range" : "3",
-    "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "60",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "106"
   }, {
-    "range" : "27",
-    "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "60",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "107"
   }, {
-    "range" : "18",
-    "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "http://www.prostep.org/ontologies/tlo/description",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "description",
+      "undefined" : "description"
+    },
+    "domain" : "40",
+    "attributes" : [ "datatype" ],
     "id" : "108"
   }, {
-    "range" : "1",
-    "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "4",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "109"
   }, {
-    "range" : "31",
-    "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "23",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "110"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#affects",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "3",
-    "label" : {
-      "IRI-based" : "affects",
-      "undefined" : "affects"
-    },
-    "domain" : "14",
-    "attributes" : [ "object" ],
-    "id" : "111"
-  }, {
-    "range" : "88",
-    "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "112"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#usageDefinedBy",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "2",
-    "label" : {
-      "IRI-based" : "usageDefinedBy",
-      "undefined" : "usage defined by"
-    },
-    "domain" : "16",
-    "attributes" : [ "object" ],
-    "id" : "113"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#assignedTo",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "81",
+    "iri" : "http://www.prostep.org/ontologies/tlo/assignedTo",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "83",
     "label" : {
       "IRI-based" : "assignedTo",
       "undefined" : "assigned to"
     },
     "domain" : "1",
     "attributes" : [ "object" ],
+    "id" : "111"
+  }, {
+    "range" : "17",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "range" : "1",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "range" : "25",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "114"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#hasSpecific",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "15",
-    "label" : {
-      "IRI-based" : "hasSpecific",
-      "undefined" : "has specific"
-    },
-    "domain" : "6",
-    "attributes" : [ "object" ],
+    "range" : "69",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "115"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#description",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "80",
+    "iri" : "http://www.prostep.org/ontologies/tlo/affects",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "4",
     "label" : {
-      "IRI-based" : "description",
-      "undefined" : "description"
+      "IRI-based" : "affects",
+      "undefined" : "affects"
     },
-    "domain" : "4",
-    "attributes" : [ "datatype" ],
+    "domain" : "5",
+    "attributes" : [ "object" ],
     "id" : "116"
   }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#performedWith",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "performedWith",
-      "undefined" : "performed with"
-    },
-    "domain" : "18",
-    "attributes" : [ "object" ],
-    "id" : "117"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#defines",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "14",
-    "label" : {
-      "IRI-based" : "defines",
-      "undefined" : "defines"
-    },
-    "domain" : "3",
-    "attributes" : [ "object" ],
-    "id" : "118"
-  }, {
-    "iri" : "http://www.prostep.org/ontologies/datamodel#identifier",
-    "baseIri" : "http://www.prostep.org/ontologies/datamodel",
-    "range" : "82",
+    "iri" : "http://www.prostep.org/ontologies/tlo/identifier",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "86",
     "label" : {
       "IRI-based" : "identifier",
       "undefined" : "identifier"
     },
-    "domain" : "4",
+    "domain" : "40",
     "attributes" : [ "datatype" ],
-    "id" : "119"
+    "id" : "117"
+  }, {
+    "iri" : "http://www.prostep.org/ontologies/tlo/performedWith",
+    "baseIri" : "http://www.prostep.org/ontologies/tlo",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "performedWith",
+      "undefined" : "performed with"
+    },
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "118"
   } ]
 }

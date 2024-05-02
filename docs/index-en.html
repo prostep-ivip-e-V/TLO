@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://www.prostep.org/ontologies/datamodel#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.prostep.org/ontologies/datamodel#","name":"TopLevel DataModel Ontology", "headline":"Ontology code created by Chowlk", "datePublished":"Fri Oct 28 11:57:50 CEST 2022", "version":"0.0.1", "author":[{"@type":"Person","name":"prostep ivip"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://www.prostep.org/ontologies/tlo/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.prostep.org/ontologies/tlo/","name":"TopLevel DataModel Ontology", "headline":"Document describing the ontology http://www.prostep.org/ontologies/tlo/", "datePublished":"Fri Jan 20 13:57:20 CET 2023", "version":"0.0.1", "author":[{"@type":"Person","name":"prostep ivip"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -42,17 +42,12 @@ function loadTOC(){
 	  t+='</ul>';
 	  $("#toc").html(t); 
 }
- $.fn.ignore = function(sel){
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- };    $(function(){
-      $("#abstract").load("sections/abstract-en.html"); 
-      $("#introduction").load("sections/introduction-en.html"); 
-      $("#overview").load("sections/overview-en.html"); 
-      $("#description").load("sections/description-en.html"); 
-      $("#references").load("sections/references-en.html"); 
-      $("#crossref").load("sections/crossref-en.html", null, loadHash); 
-    });
-    </script> 
+ }; 
+   </script> 
   </head> 
 
 <body>
@@ -64,13 +59,13 @@ function loadTOC(){
 
 <dl>
 <dt>Latest version:</dt>
-<dd><a href="http://www.prostep.org/ontologies/datamodel#">http://www.prostep.org/ontologies/datamodel#</a></dd>
+<dd><a href="http://www.prostep.org/ontologies/tlo/">http://www.prostep.org/ontologies/tlo/</a></dd>
 <dt>Revision:</dt>
 <dd>0.0.1</dd>
 <dt>Authors:</dt>
 <dd>prostep ivip</dd>
 
-<dt>Download serialization:</dt><dd><span><a href="ivipTLO.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ivipTLO.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ivipTLO.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ivipTLO.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
 <dd>prostep ivip. TopLevel DataModel Ontology. Revision: 0.0.1.</dd>
@@ -82,12 +77,2185 @@ function loadTOC(){
 <div>
 <span>Ontology Specification Draft</span>
 </div>
-</div>     <div id="abstract"></div>
-<div id="toc"></div>     <div id="introduction"></div>
-     <div id="overview"></div>
-     <div id="description"></div>
-     <div id="crossref"></div>
-     <div id="references"></div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+Increasing demand for interdisciplinary interaction in product and system lifecycles raises the need for cross project collaboration and common results. Driven by the industrial need, various prostep ivip (psi) project groups are dealing with future collaboration scenarios. Therefore, focused collaboration processes, information models and technologies are defined individually.
+The vision of the psi Ontology initiative is to enable and support collaboration scenarios based on a harmonized reference model combining a unified information model (semantic + structure) and validated technology. Based on an ontological approach, the aim is to create an information model across project groups that represents commonalities, connections, but also gaps between the individual project groups and makes the information gained reusable.
+This documentation gives details of the developed psi top-level ontology.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+The psi ontology initiative was launched in autumn 2021 with the goal of an integrated knowledge management across the different project groups. The first step in creating the psi Ontology was gathering and analysing the available input of the individual working groups. In particular, the focus lay on use cases, (reference) processes and data models, as well as standards used and the already known collaborations with other project groups. Based on this input an abstraction was conducted over the information of the project groups and an ontology-based prostep ivip reference model was created. Freely available ontologies were included what ensures usability and extensibility of the resulting ontology.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://www.prostep.org/ontologies/tlo/&gt;</td></tr>
+<tr><td></td><td></td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">TopLevel DataModel Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology is composed of the following  classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#CollaborationElement"
+         title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+   </li>
+   <li>
+      <a href="#Configuration"
+         title="http://www.prostep.org/ontologies/tlo/Configuration">Configuration</a>
+   </li>
+   <li>
+      <a href="#Criteria" title="http://www.prostep.org/ontologies/tlo/Criteria">Criteria</a>
+   </li>
+   <li>
+      <a href="#FunctionalModel"
+         title="http://www.prostep.org/ontologies/tlo/FunctionalModel">Functional Model</a>
+   </li>
+   <li>
+      <a href="#GeometricalModel"
+         title="http://www.prostep.org/ontologies/tlo/GeometricalModel">Geometrical Model</a>
+   </li>
+   <li>
+      <a href="#Interface" title="http://www.prostep.org/ontologies/tlo/Interface">Interface</a>
+   </li>
+   <li>
+      <a href="#Model" title="http://www.prostep.org/ontologies/tlo/Model">Model</a>
+   </li>
+   <li>
+      <a href="#Plan" title="http://www.prostep.org/ontologies/tlo/Plan">Plan</a>
+   </li>
+   <li>
+      <a href="#Product" title="http://www.prostep.org/ontologies/tlo/Product">Product</a>
+   </li>
+   <li>
+      <a href="#Project" title="http://www.prostep.org/ontologies/tlo/Project">Project</a>
+   </li>
+   <li>
+      <a href="#Requirement"
+         title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+   </li>
+   <li>
+      <a href="#ResponsiblePerson"
+         title="http://www.prostep.org/ontologies/tlo/ResponsiblePerson">Responsible Person</a>
+   </li>
+   <li>
+      <a href="#Result" title="http://www.prostep.org/ontologies/tlo/Result">Result</a>
+   </li>
+   <li>
+      <a href="#Run" title="http://www.prostep.org/ontologies/tlo/Run">Run</a>
+   </li>
+   <li>
+      <a href="#SimulationModel"
+         title="http://www.prostep.org/ontologies/tlo/SimulationModel">Simulation Model</a>
+   </li>
+   <li>
+      <a href="#Structure" title="http://www.prostep.org/ontologies/tlo/Structure">Structure</a>
+   </li>
+   <li>
+      <a href="#SystemModel"
+         title="http://www.prostep.org/ontologies/tlo/SystemModel">System Model</a>
+   </li>
+   <li>
+      <a href="#Task" title="http://www.prostep.org/ontologies/tlo/Task">Task</a>
+   </li>
+   <li>
+      <a href="#TechnicalPart"
+         title="http://www.prostep.org/ontologies/tlo/TechnicalPart">Technical Part</a>
+   </li>
+   <li>
+      <a href="#Test" title="http://www.prostep.org/ontologies/tlo/Test">Test</a>
+   </li>
+   <li>
+      <a href="#UseCase" title="http://www.prostep.org/ontologies/tlo/UseCase">Use Case</a>
+   </li>
+   <li>
+      <a href="#Variation" title="http://www.prostep.org/ontologies/tlo/Variation">Variation</a>
+   </li>
+   <li>
+      <a href="#Version" title="http://www.prostep.org/ontologies/tlo/Version">Version</a>
+   </li>
+   <li>
+      <a href="#View" title="http://www.prostep.org/ontologies/tlo/View">View</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#affects" title="http://www.prostep.org/ontologies/tlo/affects">affects</a>
+   </li>
+   <li>
+      <a href="#assignedTo" title="http://www.prostep.org/ontologies/tlo/assignedTo">assigned to</a>
+   </li>
+   <li>
+      <a href="#basisFor" title="http://www.prostep.org/ontologies/tlo/basisFor">basis for</a>
+   </li>
+   <li>
+      <a href="#configurableBy"
+         title="http://www.prostep.org/ontologies/tlo/configurableBy">configurable by</a>
+   </li>
+   <li>
+      <a href="#consistsOf" title="http://www.prostep.org/ontologies/tlo/consistsOf">consists of</a>
+   </li>
+   <li>
+      <a href="#definedBy" title="http://www.prostep.org/ontologies/tlo/definedBy">defined by</a>
+   </li>
+   <li>
+      <a href="#defines" title="http://www.prostep.org/ontologies/tlo/defines">defines</a>
+   </li>
+   <li>
+      <a href="#derivedFrom"
+         title="http://www.prostep.org/ontologies/tlo/derivedFrom">derived from</a>
+   </li>
+   <li>
+      <a href="#focusOn" title="http://www.prostep.org/ontologies/tlo/focusOn">focus on</a>
+   </li>
+   <li>
+      <a href="#fullfill" title="http://www.prostep.org/ontologies/tlo/fullfill">fullfill</a>
+   </li>
+   <li>
+      <a href="#hasPlan" title="http://www.prostep.org/ontologies/tlo/hasPlan">has plan</a>
+   </li>
+   <li>
+      <a href="#hasSpecific"
+         title="http://www.prostep.org/ontologies/tlo/hasSpecific">has specific</a>
+   </li>
+   <li>
+      <a href="#hasSubElement"
+         title="http://www.prostep.org/ontologies/tlo/hasSubElement">has sub element</a>
+   </li>
+   <li>
+      <a href="#hasSubstructure"
+         title="http://www.prostep.org/ontologies/tlo/hasSubstructure">has substructure</a>
+   </li>
+   <li>
+      <a href="#hasVersion" title="http://www.prostep.org/ontologies/tlo/hasVersion">has version</a>
+   </li>
+   <li>
+      <a href="#isPartOf" title="http://www.prostep.org/ontologies/tlo/isPartOf">is part of</a>
+   </li>
+   <li>
+      <a href="#isRelatedTo"
+         title="http://www.prostep.org/ontologies/tlo/isRelatedTo">is related to</a>
+   </li>
+   <li>
+      <a href="#performedWith"
+         title="http://www.prostep.org/ontologies/tlo/performedWith">performed with</a>
+   </li>
+   <li>
+      <a href="#plannedBy" title="http://www.prostep.org/ontologies/tlo/plannedBy">planned by</a>
+   </li>
+   <li>
+      <a href="#realizedBy" title="http://www.prostep.org/ontologies/tlo/realizedBy">realized by</a>
+   </li>
+   <li>
+      <a href="#refersTo" title="http://www.prostep.org/ontologies/tlo/refersTo">refers to</a>
+   </li>
+   <li>
+      <a href="#relatesTo" title="http://www.prostep.org/ontologies/tlo/relatesTo">relates to</a>
+   </li>
+   <li>
+      <a href="#satisfiedBy"
+         title="http://www.prostep.org/ontologies/tlo/satisfiedBy">satisfied by</a>
+   </li>
+   <li>
+      <a href="#scheduledBy"
+         title="http://www.prostep.org/ontologies/tlo/scheduledBy">scheduled by</a>
+   </li>
+   <li>
+      <a href="#specificFor"
+         title="http://www.prostep.org/ontologies/tlo/specificFor">specific for</a>
+   </li>
+   <li>
+      <a href="#structurableBy"
+         title="http://www.prostep.org/ontologies/tlo/structurableBy">structurable by</a>
+   </li>
+   <li>
+      <a href="#targetOf" title="http://www.prostep.org/ontologies/tlo/targetOf">target of</a>
+   </li>
+   <li>
+      <a href="#usageDefinedBy"
+         title="http://www.prostep.org/ontologies/tlo/usageDefinedBy">usage defined by</a>
+   </li>
+   <li>
+      <a href="#uses" title="http://www.prostep.org/ontologies/tlo/uses">uses</a>
+   </li>
+   <li>
+      <a href="#variedBy" title="http://www.prostep.org/ontologies/tlo/variedBy">varied by</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#configParameter"
+         title="http://www.prostep.org/ontologies/tlo/configParameter">config parameter</a>
+   </li>
+   <li>
+      <a href="#description"
+         title="http://www.prostep.org/ontologies/tlo/description">description</a>
+   </li>
+   <li>
+      <a href="#end" title="http://www.prostep.org/ontologies/tlo/end">end</a>
+   </li>
+   <li>
+      <a href="#identifier" title="http://www.prostep.org/ontologies/tlo/identifier">identifier</a>
+   </li>
+   <li>
+      <a href="#name" title="http://www.prostep.org/ontologies/tlo/name">name</a>
+   </li>
+   <li>
+      <a href="#number" title="http://www.prostep.org/ontologies/tlo/number">number</a>
+   </li>
+   <li>
+      <a href="#start" title="http://www.prostep.org/ontologies/tlo/start">start</a>
+   </li>
+   <li>
+      <a href="#status" title="http://www.prostep.org/ontologies/tlo/status">status</a>
+   </li>
+   <li>
+      <a href="#title" title="http://www.prostep.org/ontologies/tlo/title">title</a>
+   </li>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">TopLevel DataModel Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+The following diagram gives an overview of the classes and relations.</span>
+<br>
+<img src="P:\Projekte\PS Verein Projektgruppen\PS-Verein-Projektgruppen2022\Ontologies_PR0003638\Projektdoku\12 ont-Doku\Doku Bilder\drawIO_confluence1.jpg">
+</br>
+<p> Classes and relationships </p></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for TopLevel DataModel Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by TopLevel DataModel Ontology.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#CollaborationElement"
+            title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+      </li>
+      <li>
+         <a href="#Configuration"
+            title="http://www.prostep.org/ontologies/tlo/Configuration">Configuration</a>
+      </li>
+      <li>
+         <a href="#Criteria" title="http://www.prostep.org/ontologies/tlo/Criteria">Criteria</a>
+      </li>
+      <li>
+         <a href="#FunctionalModel"
+            title="http://www.prostep.org/ontologies/tlo/FunctionalModel">Functional Model</a>
+      </li>
+      <li>
+         <a href="#GeometricalModel"
+            title="http://www.prostep.org/ontologies/tlo/GeometricalModel">Geometrical Model</a>
+      </li>
+      <li>
+         <a href="#Interface" title="http://www.prostep.org/ontologies/tlo/Interface">Interface</a>
+      </li>
+      <li>
+         <a href="#Model" title="http://www.prostep.org/ontologies/tlo/Model">Model</a>
+      </li>
+      <li>
+         <a href="#Plan" title="http://www.prostep.org/ontologies/tlo/Plan">Plan</a>
+      </li>
+      <li>
+         <a href="#Product" title="http://www.prostep.org/ontologies/tlo/Product">Product</a>
+      </li>
+      <li>
+         <a href="#Project" title="http://www.prostep.org/ontologies/tlo/Project">Project</a>
+      </li>
+      <li>
+         <a href="#Requirement"
+            title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+      </li>
+      <li>
+         <a href="#ResponsiblePerson"
+            title="http://www.prostep.org/ontologies/tlo/ResponsiblePerson">Responsible Person</a>
+      </li>
+      <li>
+         <a href="#Result" title="http://www.prostep.org/ontologies/tlo/Result">Result</a>
+      </li>
+      <li>
+         <a href="#Run" title="http://www.prostep.org/ontologies/tlo/Run">Run</a>
+      </li>
+      <li>
+         <a href="#SimulationModel"
+            title="http://www.prostep.org/ontologies/tlo/SimulationModel">Simulation Model</a>
+      </li>
+      <li>
+         <a href="#Structure" title="http://www.prostep.org/ontologies/tlo/Structure">Structure</a>
+      </li>
+      <li>
+         <a href="#SystemModel"
+            title="http://www.prostep.org/ontologies/tlo/SystemModel">System Model</a>
+      </li>
+      <li>
+         <a href="#Task" title="http://www.prostep.org/ontologies/tlo/Task">Task</a>
+      </li>
+      <li>
+         <a href="#TechnicalPart"
+            title="http://www.prostep.org/ontologies/tlo/TechnicalPart">Technical Part</a>
+      </li>
+      <li>
+         <a href="#Test" title="http://www.prostep.org/ontologies/tlo/Test">Test</a>
+      </li>
+      <li>
+         <a href="#UseCase" title="http://www.prostep.org/ontologies/tlo/UseCase">Use Case</a>
+      </li>
+      <li>
+         <a href="#Variation" title="http://www.prostep.org/ontologies/tlo/Variation">Variation</a>
+      </li>
+      <li>
+         <a href="#Version" title="http://www.prostep.org/ontologies/tlo/Version">Version</a>
+      </li>
+      <li>
+         <a href="#View" title="http://www.prostep.org/ontologies/tlo/View">View</a>
+      </li>
+   </ul>
+   <div class="entity" id="CollaborationElement">
+      <h3>Collaboration Element<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/CollaborationElement</p>
+      <div class="comment">
+         <span class="markdown">Abstract super-element from which (all) elements are derived, which are exchanged or linked.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Model" title="http://www.prostep.org/ontologies/tlo/Model">Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Requirement"
+               title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Result" title="http://www.prostep.org/ontologies/tlo/Result">Result</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Run" title="http://www.prostep.org/ontologies/tlo/Run">Run</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Task" title="http://www.prostep.org/ontologies/tlo/Task">Task</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TechnicalPart"
+               title="http://www.prostep.org/ontologies/tlo/TechnicalPart">Technical Part</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Test" title="http://www.prostep.org/ontologies/tlo/Test">Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UseCase" title="http://www.prostep.org/ontologies/tlo/UseCase">Use Case</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#configurableBy"
+               title="http://www.prostep.org/ontologies/tlo/configurableBy">configurable by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#description"
+               title="http://www.prostep.org/ontologies/tlo/description">description</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSubElement"
+               title="http://www.prostep.org/ontologies/tlo/hasSubElement">has sub element</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasVersion" title="http://www.prostep.org/ontologies/tlo/hasVersion">has version</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#identifier" title="http://www.prostep.org/ontologies/tlo/identifier">identifier</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#number" title="http://www.prostep.org/ontologies/tlo/number">number</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#title" title="http://www.prostep.org/ontologies/tlo/title">title</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#uses" title="http://www.prostep.org/ontologies/tlo/uses">uses</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasSubElement"
+               title="http://www.prostep.org/ontologies/tlo/hasSubElement">has sub element</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#realizedBy" title="http://www.prostep.org/ontologies/tlo/realizedBy">realized by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#relatesTo" title="http://www.prostep.org/ontologies/tlo/relatesTo">relates to</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Configuration">
+      <h3>Configuration<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/Configuration</p>
+      <div class="comment">
+         <span class="markdown">Abstract element that describes attributes, properties and relations that apply to all configurable elements.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#configParameter"
+               title="http://www.prostep.org/ontologies/tlo/configParameter">config parameter</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#basisFor" title="http://www.prostep.org/ontologies/tlo/basisFor">basis for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#configurableBy"
+               title="http://www.prostep.org/ontologies/tlo/configurableBy">configurable by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSpecific"
+               title="http://www.prostep.org/ontologies/tlo/hasSpecific">has specific</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Criteria">
+      <h3>Criteria<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/Criteria</p>
+      <div class="comment">
+         <span class="markdown">Criteria are derived from requirements and are used to validate results.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#definedBy" title="http://www.prostep.org/ontologies/tlo/definedBy">defined by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#fullfill" title="http://www.prostep.org/ontologies/tlo/fullfill">fullfill</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FunctionalModel">
+      <h3>Functional Model<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/FunctionalModel</p>
+      <div class="comment">
+         <span class="markdown">Conceptual model of the collaboration element at the functional level.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Model" title="http://www.prostep.org/ontologies/tlo/Model">Model</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#GeometricalModel"
+               title="http://www.prostep.org/ontologies/tlo/GeometricalModel">Geometrical Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SimulationModel"
+               title="http://www.prostep.org/ontologies/tlo/SimulationModel">Simulation Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SystemModel"
+               title="http://www.prostep.org/ontologies/tlo/SystemModel">System Model</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GeometricalModel">
+      <h3>Geometrical Model<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/GeometricalModel</p>
+      <div class="comment">
+         <span class="markdown">Conceptual model of the collaboration element at the geometrical level.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Model" title="http://www.prostep.org/ontologies/tlo/Model">Model</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#FunctionalModel"
+               title="http://www.prostep.org/ontologies/tlo/FunctionalModel">Functional Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SimulationModel"
+               title="http://www.prostep.org/ontologies/tlo/SimulationModel">Simulation Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SystemModel"
+               title="http://www.prostep.org/ontologies/tlo/SystemModel">System Model</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Interface">
+      <h3>Interface<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/Interface</p>
+      <div class="comment">
+         <span class="markdown">Represents a generic interface of a system component.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#realizedBy" title="http://www.prostep.org/ontologies/tlo/realizedBy">realized by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#uses" title="http://www.prostep.org/ontologies/tlo/uses">uses</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Model">
+      <h3>Model<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/Model</p>
+      <div class="comment">
+         <span class="markdown">Conceptual model of the collaboration element.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#CollaborationElement"
+               title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#FunctionalModel"
+               title="http://www.prostep.org/ontologies/tlo/FunctionalModel">Functional Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GeometricalModel"
+               title="http://www.prostep.org/ontologies/tlo/GeometricalModel">Geometrical Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SimulationModel"
+               title="http://www.prostep.org/ontologies/tlo/SimulationModel">Simulation Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SystemModel"
+               title="http://www.prostep.org/ontologies/tlo/SystemModel">System Model</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isRelatedTo"
+               title="http://www.prostep.org/ontologies/tlo/isRelatedTo">is related to</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Requirement"
+               title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Result" title="http://www.prostep.org/ontologies/tlo/Result">Result</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Run" title="http://www.prostep.org/ontologies/tlo/Run">Run</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Task" title="http://www.prostep.org/ontologies/tlo/Task">Task</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TechnicalPart"
+               title="http://www.prostep.org/ontologies/tlo/TechnicalPart">Technical Part</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Test" title="http://www.prostep.org/ontologies/tlo/Test">Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UseCase" title="http://www.prostep.org/ontologies/tlo/UseCase">Use Case</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Plan">
+      <h3>Plan<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/Plan</p>
+      <div class="comment">
+         <span class="markdown">Structured conception of the way in which a particular goal is to be pursued, a particular task or project is to be realized. Includes intermediate and final results to be achieved with a timeline of how and when they will be achieved.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasPlan" title="http://www.prostep.org/ontologies/tlo/hasPlan">has plan</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#plannedBy" title="http://www.prostep.org/ontologies/tlo/plannedBy">planned by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#scheduledBy"
+               title="http://www.prostep.org/ontologies/tlo/scheduledBy">scheduled by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Product">
+      <h3>Product<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/Product</p>
+      <div class="comment">
+         <span class="markdown">The project result that is generated based on the (customer) requirements within a project.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#end" title="http://www.prostep.org/ontologies/tlo/end">end</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#name" title="http://www.prostep.org/ontologies/tlo/name">name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#start" title="http://www.prostep.org/ontologies/tlo/start">start</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#usageDefinedBy"
+               title="http://www.prostep.org/ontologies/tlo/usageDefinedBy">usage defined by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#focusOn" title="http://www.prostep.org/ontologies/tlo/focusOn">focus on</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPartOf" title="http://www.prostep.org/ontologies/tlo/isPartOf">is part of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isRelatedTo"
+               title="http://www.prostep.org/ontologies/tlo/isRelatedTo">is related to</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#refersTo" title="http://www.prostep.org/ontologies/tlo/refersTo">refers to</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Project">
+      <h3>Project<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/Project</p>
+      <div class="comment">
+         <span class="markdown">A project is a temporary endeavour undertaken to create a unique product, service, or result.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#focusOn" title="http://www.prostep.org/ontologies/tlo/focusOn">focus on</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPlan" title="http://www.prostep.org/ontologies/tlo/hasPlan">has plan</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Requirement">
+      <h3>Requirement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/Requirement</p>
+      <div class="comment">
+         <span class="markdown">A singular documented physical or functional need that a particular design, product or process aims to satisfy.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#CollaborationElement"
+               title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#defines" title="http://www.prostep.org/ontologies/tlo/defines">defines</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#derivedFrom"
+               title="http://www.prostep.org/ontologies/tlo/derivedFrom">derived from</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#refersTo" title="http://www.prostep.org/ontologies/tlo/refersTo">refers to</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#affects" title="http://www.prostep.org/ontologies/tlo/affects">affects</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#definedBy" title="http://www.prostep.org/ontologies/tlo/definedBy">defined by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#derivedFrom"
+               title="http://www.prostep.org/ontologies/tlo/derivedFrom">derived from</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#satisfiedBy"
+               title="http://www.prostep.org/ontologies/tlo/satisfiedBy">satisfied by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#targetOf" title="http://www.prostep.org/ontologies/tlo/targetOf">target of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Model" title="http://www.prostep.org/ontologies/tlo/Model">Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Result" title="http://www.prostep.org/ontologies/tlo/Result">Result</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Run" title="http://www.prostep.org/ontologies/tlo/Run">Run</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Task" title="http://www.prostep.org/ontologies/tlo/Task">Task</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TechnicalPart"
+               title="http://www.prostep.org/ontologies/tlo/TechnicalPart">Technical Part</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Test" title="http://www.prostep.org/ontologies/tlo/Test">Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UseCase" title="http://www.prostep.org/ontologies/tlo/UseCase">Use Case</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ResponsiblePerson">
+      <h3>Responsible Person<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/ResponsiblePerson</p>
+      <div class="comment">
+         <span class="markdown">A natural person.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#assignedTo" title="http://www.prostep.org/ontologies/tlo/assignedTo">assigned to</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Result">
+      <h3>Result<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/Result</p>
+      <div class="comment">
+         <span class="markdown">The result of a particular test (run), which is intended to verify the fulfillment of requirements.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#CollaborationElement"
+               title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#fullfill" title="http://www.prostep.org/ontologies/tlo/fullfill">fullfill</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Model" title="http://www.prostep.org/ontologies/tlo/Model">Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Requirement"
+               title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Run" title="http://www.prostep.org/ontologies/tlo/Run">Run</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Task" title="http://www.prostep.org/ontologies/tlo/Task">Task</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TechnicalPart"
+               title="http://www.prostep.org/ontologies/tlo/TechnicalPart">Technical Part</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Test" title="http://www.prostep.org/ontologies/tlo/Test">Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UseCase" title="http://www.prostep.org/ontologies/tlo/UseCase">Use Case</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Run">
+      <h3>Run<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/Run</p>
+      <div class="comment">
+         <span class="markdown">A single iteration of a test or UseCase verification.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#CollaborationElement"
+               title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#consistsOf" title="http://www.prostep.org/ontologies/tlo/consistsOf">consists of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#performedWith"
+               title="http://www.prostep.org/ontologies/tlo/performedWith">performed with</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#scheduledBy"
+               title="http://www.prostep.org/ontologies/tlo/scheduledBy">scheduled by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Model" title="http://www.prostep.org/ontologies/tlo/Model">Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Requirement"
+               title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Result" title="http://www.prostep.org/ontologies/tlo/Result">Result</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Task" title="http://www.prostep.org/ontologies/tlo/Task">Task</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TechnicalPart"
+               title="http://www.prostep.org/ontologies/tlo/TechnicalPart">Technical Part</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Test" title="http://www.prostep.org/ontologies/tlo/Test">Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UseCase" title="http://www.prostep.org/ontologies/tlo/UseCase">Use Case</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SimulationModel">
+      <h3>Simulation Model<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/SimulationModel</p>
+      <div class="comment">
+         <span class="markdown">Conceptual model of the collaboration element at the simulation level.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Model" title="http://www.prostep.org/ontologies/tlo/Model">Model</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#FunctionalModel"
+               title="http://www.prostep.org/ontologies/tlo/FunctionalModel">Functional Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GeometricalModel"
+               title="http://www.prostep.org/ontologies/tlo/GeometricalModel">Geometrical Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SystemModel"
+               title="http://www.prostep.org/ontologies/tlo/SystemModel">System Model</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Structure">
+      <h3>Structure<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/Structure</p>
+      <div class="comment">
+         <span class="markdown">Structure of an element.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasSubstructure"
+               title="http://www.prostep.org/ontologies/tlo/hasSubstructure">has substructure</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#variedBy" title="http://www.prostep.org/ontologies/tlo/variedBy">varied by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasSubstructure"
+               title="http://www.prostep.org/ontologies/tlo/hasSubstructure">has substructure</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#structurableBy"
+               title="http://www.prostep.org/ontologies/tlo/structurableBy">structurable by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SystemModel">
+      <h3>System Model<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/SystemModel</p>
+      <div class="comment">
+         <span class="markdown">Conceptual model of the collaboration element at the system level.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Model" title="http://www.prostep.org/ontologies/tlo/Model">Model</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#FunctionalModel"
+               title="http://www.prostep.org/ontologies/tlo/FunctionalModel">Functional Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GeometricalModel"
+               title="http://www.prostep.org/ontologies/tlo/GeometricalModel">Geometrical Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SimulationModel"
+               title="http://www.prostep.org/ontologies/tlo/SimulationModel">Simulation Model</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Task">
+      <h3>Task<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/Task</p>
+      <div class="comment">
+         <span class="markdown">A task is a definite piece of work assigned to a person or organisation.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#CollaborationElement"
+               title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#assignedTo" title="http://www.prostep.org/ontologies/tlo/assignedTo">assigned to</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#consistsOf" title="http://www.prostep.org/ontologies/tlo/consistsOf">consists of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Model" title="http://www.prostep.org/ontologies/tlo/Model">Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Requirement"
+               title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Result" title="http://www.prostep.org/ontologies/tlo/Result">Result</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Run" title="http://www.prostep.org/ontologies/tlo/Run">Run</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TechnicalPart"
+               title="http://www.prostep.org/ontologies/tlo/TechnicalPart">Technical Part</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Test" title="http://www.prostep.org/ontologies/tlo/Test">Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UseCase" title="http://www.prostep.org/ontologies/tlo/UseCase">Use Case</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TechnicalPart">
+      <h3>Technical Part<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/TechnicalPart</p>
+      <div class="comment">
+         <span class="markdown">A physical/technical component of the product. A part can be a real mechatronic component, but also a software part.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#CollaborationElement"
+               title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isPartOf" title="http://www.prostep.org/ontologies/tlo/isPartOf">is part of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#targetOf" title="http://www.prostep.org/ontologies/tlo/targetOf">target of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Model" title="http://www.prostep.org/ontologies/tlo/Model">Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Requirement"
+               title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Result" title="http://www.prostep.org/ontologies/tlo/Result">Result</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Run" title="http://www.prostep.org/ontologies/tlo/Run">Run</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Task" title="http://www.prostep.org/ontologies/tlo/Task">Task</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Test" title="http://www.prostep.org/ontologies/tlo/Test">Test</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UseCase" title="http://www.prostep.org/ontologies/tlo/UseCase">Use Case</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Test">
+      <h3>Test<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/Test</p>
+      <div class="comment">
+         <span class="markdown">Checking whether an object behaves as expected under conditions that are as realistic as possible and meets the requirements.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#CollaborationElement"
+               title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#plannedBy" title="http://www.prostep.org/ontologies/tlo/plannedBy">planned by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Model" title="http://www.prostep.org/ontologies/tlo/Model">Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Requirement"
+               title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Result" title="http://www.prostep.org/ontologies/tlo/Result">Result</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Run" title="http://www.prostep.org/ontologies/tlo/Run">Run</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Task" title="http://www.prostep.org/ontologies/tlo/Task">Task</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TechnicalPart"
+               title="http://www.prostep.org/ontologies/tlo/TechnicalPart">Technical Part</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#UseCase" title="http://www.prostep.org/ontologies/tlo/UseCase">Use Case</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UseCase">
+      <h3>Use Case<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/UseCase</p>
+      <div class="comment">
+         <span class="markdown">A specific situation in which a product or service could potentially be used.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#CollaborationElement"
+               title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#satisfiedBy"
+               title="http://www.prostep.org/ontologies/tlo/satisfiedBy">satisfied by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#usageDefinedBy"
+               title="http://www.prostep.org/ontologies/tlo/usageDefinedBy">usage defined by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Model" title="http://www.prostep.org/ontologies/tlo/Model">Model</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Requirement"
+               title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Result" title="http://www.prostep.org/ontologies/tlo/Result">Result</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Run" title="http://www.prostep.org/ontologies/tlo/Run">Run</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Task" title="http://www.prostep.org/ontologies/tlo/Task">Task</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TechnicalPart"
+               title="http://www.prostep.org/ontologies/tlo/TechnicalPart">Technical Part</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Test" title="http://www.prostep.org/ontologies/tlo/Test">Test</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Variation">
+      <h3>Variation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/Variation</p>
+      <div class="comment">
+         <span class="markdown">Variations are subsets of attributes derived from the structure and defined by the requirements that affect the configuration.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#affects" title="http://www.prostep.org/ontologies/tlo/affects">affects</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#basisFor" title="http://www.prostep.org/ontologies/tlo/basisFor">basis for</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#defines" title="http://www.prostep.org/ontologies/tlo/defines">defines</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#variedBy" title="http://www.prostep.org/ontologies/tlo/variedBy">varied by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Version">
+      <h3>Version<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/Version</p>
+      <div class="comment">
+         <span class="markdown">The state of an Collaboration Element.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasSpecific"
+               title="http://www.prostep.org/ontologies/tlo/hasSpecific">has specific</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#status" title="http://www.prostep.org/ontologies/tlo/status">status</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasVersion" title="http://www.prostep.org/ontologies/tlo/hasVersion">has version</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#performedWith"
+               title="http://www.prostep.org/ontologies/tlo/performedWith">performed with</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#specificFor"
+               title="http://www.prostep.org/ontologies/tlo/specificFor">specific for</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="View">
+      <h3>View<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/View</p>
+      <div class="comment">
+         <span class="markdown">A view is a specific perspective on a specific version of a collaboration element.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#relatesTo" title="http://www.prostep.org/ontologies/tlo/relatesTo">relates to</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#specificFor"
+               title="http://www.prostep.org/ontologies/tlo/specificFor">specific for</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#affects" title="http://www.prostep.org/ontologies/tlo/affects">affects</a>
+      </li>
+      <li>
+         <a href="#assignedTo" title="http://www.prostep.org/ontologies/tlo/assignedTo">assigned to</a>
+      </li>
+      <li>
+         <a href="#basisFor" title="http://www.prostep.org/ontologies/tlo/basisFor">basis for</a>
+      </li>
+      <li>
+         <a href="#configurableBy"
+            title="http://www.prostep.org/ontologies/tlo/configurableBy">configurable by</a>
+      </li>
+      <li>
+         <a href="#consistsOf" title="http://www.prostep.org/ontologies/tlo/consistsOf">consists of</a>
+      </li>
+      <li>
+         <a href="#definedBy" title="http://www.prostep.org/ontologies/tlo/definedBy">defined by</a>
+      </li>
+      <li>
+         <a href="#defines" title="http://www.prostep.org/ontologies/tlo/defines">defines</a>
+      </li>
+      <li>
+         <a href="#derivedFrom"
+            title="http://www.prostep.org/ontologies/tlo/derivedFrom">derived from</a>
+      </li>
+      <li>
+         <a href="#focusOn" title="http://www.prostep.org/ontologies/tlo/focusOn">focus on</a>
+      </li>
+      <li>
+         <a href="#fullfill" title="http://www.prostep.org/ontologies/tlo/fullfill">fullfill</a>
+      </li>
+      <li>
+         <a href="#hasPlan" title="http://www.prostep.org/ontologies/tlo/hasPlan">has plan</a>
+      </li>
+      <li>
+         <a href="#hasSpecific"
+            title="http://www.prostep.org/ontologies/tlo/hasSpecific">has specific</a>
+      </li>
+      <li>
+         <a href="#hasSubElement"
+            title="http://www.prostep.org/ontologies/tlo/hasSubElement">has sub element</a>
+      </li>
+      <li>
+         <a href="#hasSubstructure"
+            title="http://www.prostep.org/ontologies/tlo/hasSubstructure">has substructure</a>
+      </li>
+      <li>
+         <a href="#hasVersion" title="http://www.prostep.org/ontologies/tlo/hasVersion">has version</a>
+      </li>
+      <li>
+         <a href="#isPartOf" title="http://www.prostep.org/ontologies/tlo/isPartOf">is part of</a>
+      </li>
+      <li>
+         <a href="#isRelatedTo"
+            title="http://www.prostep.org/ontologies/tlo/isRelatedTo">is related to</a>
+      </li>
+      <li>
+         <a href="#performedWith"
+            title="http://www.prostep.org/ontologies/tlo/performedWith">performed with</a>
+      </li>
+      <li>
+         <a href="#plannedBy" title="http://www.prostep.org/ontologies/tlo/plannedBy">planned by</a>
+      </li>
+      <li>
+         <a href="#realizedBy" title="http://www.prostep.org/ontologies/tlo/realizedBy">realized by</a>
+      </li>
+      <li>
+         <a href="#refersTo" title="http://www.prostep.org/ontologies/tlo/refersTo">refers to</a>
+      </li>
+      <li>
+         <a href="#relatesTo" title="http://www.prostep.org/ontologies/tlo/relatesTo">relates to</a>
+      </li>
+      <li>
+         <a href="#satisfiedBy"
+            title="http://www.prostep.org/ontologies/tlo/satisfiedBy">satisfied by</a>
+      </li>
+      <li>
+         <a href="#scheduledBy"
+            title="http://www.prostep.org/ontologies/tlo/scheduledBy">scheduled by</a>
+      </li>
+      <li>
+         <a href="#specificFor"
+            title="http://www.prostep.org/ontologies/tlo/specificFor">specific for</a>
+      </li>
+      <li>
+         <a href="#structurableBy"
+            title="http://www.prostep.org/ontologies/tlo/structurableBy">structurable by</a>
+      </li>
+      <li>
+         <a href="#targetOf" title="http://www.prostep.org/ontologies/tlo/targetOf">target of</a>
+      </li>
+      <li>
+         <a href="#usageDefinedBy"
+            title="http://www.prostep.org/ontologies/tlo/usageDefinedBy">usage defined by</a>
+      </li>
+      <li>
+         <a href="#uses" title="http://www.prostep.org/ontologies/tlo/uses">uses</a>
+      </li>
+      <li>
+         <a href="#variedBy" title="http://www.prostep.org/ontologies/tlo/variedBy">varied by</a>
+      </li>
+   </ul>
+   <div class="entity" id="affects">
+      <h3>affects<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/affects</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Variation" title="http://www.prostep.org/ontologies/tlo/Variation">Variation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Requirement"
+                  title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="assignedTo">
+      <h3>assigned to<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/assignedTo</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Task" title="http://www.prostep.org/ontologies/tlo/Task">Task</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ResponsiblePerson"
+                  title="http://www.prostep.org/ontologies/tlo/ResponsiblePerson">Responsible Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="basisFor">
+      <h3>basis for<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/basisFor</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Variation" title="http://www.prostep.org/ontologies/tlo/Variation">Variation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Configuration"
+                  title="http://www.prostep.org/ontologies/tlo/Configuration">Configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="configurableBy">
+      <h3>configurable by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/configurableBy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CollaborationElement"
+                  title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Configuration"
+                  title="http://www.prostep.org/ontologies/tlo/Configuration">Configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="consistsOf">
+      <h3>consists of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/consistsOf</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Run" title="http://www.prostep.org/ontologies/tlo/Run">Run</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Task" title="http://www.prostep.org/ontologies/tlo/Task">Task</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="definedBy">
+      <h3>defined by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/definedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Criteria" title="http://www.prostep.org/ontologies/tlo/Criteria">Criteria</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Requirement"
+                  title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="defines">
+      <h3>defines<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/defines</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Requirement"
+                  title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Variation" title="http://www.prostep.org/ontologies/tlo/Variation">Variation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="derivedFrom">
+      <h3>derived from<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/derivedFrom</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Requirement"
+                  title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Requirement"
+                  title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="focusOn">
+      <h3>focus on<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/focusOn</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Project" title="http://www.prostep.org/ontologies/tlo/Project">Project</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Product" title="http://www.prostep.org/ontologies/tlo/Product">Product</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="fullfill">
+      <h3>fullfill<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/fullfill</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Result" title="http://www.prostep.org/ontologies/tlo/Result">Result</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Criteria" title="http://www.prostep.org/ontologies/tlo/Criteria">Criteria</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPlan">
+      <h3>has plan<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/hasPlan</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Project" title="http://www.prostep.org/ontologies/tlo/Project">Project</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Plan" title="http://www.prostep.org/ontologies/tlo/Plan">Plan</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSpecific">
+      <h3>has specific<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/hasSpecific</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Version" title="http://www.prostep.org/ontologies/tlo/Version">Version</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Configuration"
+                  title="http://www.prostep.org/ontologies/tlo/Configuration">Configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSubElement">
+      <h3>has sub element<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/hasSubElement</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CollaborationElement"
+                  title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#CollaborationElement"
+                  title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSubstructure">
+      <h3>has substructure<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/hasSubstructure</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Structure" title="http://www.prostep.org/ontologies/tlo/Structure">Structure</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Structure" title="http://www.prostep.org/ontologies/tlo/Structure">Structure</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasVersion">
+      <h3>has version<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/hasVersion</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CollaborationElement"
+                  title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Version" title="http://www.prostep.org/ontologies/tlo/Version">Version</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPartOf">
+      <h3>is part of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/isPartOf</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TechnicalPart"
+                  title="http://www.prostep.org/ontologies/tlo/TechnicalPart">Technical Part</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Product" title="http://www.prostep.org/ontologies/tlo/Product">Product</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isRelatedTo">
+      <h3>is related to<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/isRelatedTo</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Model" title="http://www.prostep.org/ontologies/tlo/Model">Model</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Product" title="http://www.prostep.org/ontologies/tlo/Product">Product</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="performedWith">
+      <h3>performed with<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/performedWith</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Run" title="http://www.prostep.org/ontologies/tlo/Run">Run</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Version" title="http://www.prostep.org/ontologies/tlo/Version">Version</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="plannedBy">
+      <h3>planned by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/plannedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Test" title="http://www.prostep.org/ontologies/tlo/Test">Test</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Plan" title="http://www.prostep.org/ontologies/tlo/Plan">Plan</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="realizedBy">
+      <h3>realized by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/realizedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Interface" title="http://www.prostep.org/ontologies/tlo/Interface">Interface</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#CollaborationElement"
+                  title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="refersTo">
+      <h3>refers to<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/refersTo</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Requirement"
+                  title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Product" title="http://www.prostep.org/ontologies/tlo/Product">Product</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relatesTo">
+      <h3>relates to<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/relatesTo</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#View" title="http://www.prostep.org/ontologies/tlo/View">View</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#CollaborationElement"
+                  title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="satisfiedBy">
+      <h3>satisfied by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/satisfiedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#UseCase" title="http://www.prostep.org/ontologies/tlo/UseCase">Use Case</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Requirement"
+                  title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="scheduledBy">
+      <h3>scheduled by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/scheduledBy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Run" title="http://www.prostep.org/ontologies/tlo/Run">Run</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Plan" title="http://www.prostep.org/ontologies/tlo/Plan">Plan</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="specificFor">
+      <h3>specific for<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/specificFor</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#View" title="http://www.prostep.org/ontologies/tlo/View">View</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Version" title="http://www.prostep.org/ontologies/tlo/Version">Version</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="structurableBy">
+      <h3>structurable by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/structurableBy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CollaborationElement"
+                  title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Plan" title="http://www.prostep.org/ontologies/tlo/Plan">Plan</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Product" title="http://www.prostep.org/ontologies/tlo/Product">Product</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Project" title="http://www.prostep.org/ontologies/tlo/Project">Project</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Structure" title="http://www.prostep.org/ontologies/tlo/Structure">Structure</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="targetOf">
+      <h3>target of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/targetOf</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TechnicalPart"
+                  title="http://www.prostep.org/ontologies/tlo/TechnicalPart">Technical Part</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Requirement"
+                  title="http://www.prostep.org/ontologies/tlo/Requirement">Requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="usageDefinedBy">
+      <h3>usage defined by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/usageDefinedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Product" title="http://www.prostep.org/ontologies/tlo/Product">Product</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#UseCase" title="http://www.prostep.org/ontologies/tlo/UseCase">Use Case</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="uses">
+      <h3>uses<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/uses</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CollaborationElement"
+                  title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Interface" title="http://www.prostep.org/ontologies/tlo/Interface">Interface</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="variedBy">
+      <h3>varied by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/variedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Structure" title="http://www.prostep.org/ontologies/tlo/Structure">Structure</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Variation" title="http://www.prostep.org/ontologies/tlo/Variation">Variation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#configParameter"
+            title="http://www.prostep.org/ontologies/tlo/configParameter">config parameter</a>
+      </li>
+      <li>
+         <a href="#description"
+            title="http://www.prostep.org/ontologies/tlo/description">description</a>
+      </li>
+      <li>
+         <a href="#end" title="http://www.prostep.org/ontologies/tlo/end">end</a>
+      </li>
+      <li>
+         <a href="#identifier" title="http://www.prostep.org/ontologies/tlo/identifier">identifier</a>
+      </li>
+      <li>
+         <a href="#name" title="http://www.prostep.org/ontologies/tlo/name">name</a>
+      </li>
+      <li>
+         <a href="#number" title="http://www.prostep.org/ontologies/tlo/number">number</a>
+      </li>
+      <li>
+         <a href="#start" title="http://www.prostep.org/ontologies/tlo/start">start</a>
+      </li>
+      <li>
+         <a href="#status" title="http://www.prostep.org/ontologies/tlo/status">status</a>
+      </li>
+      <li>
+         <a href="#title" title="http://www.prostep.org/ontologies/tlo/title">title</a>
+      </li>
+   </ul>
+   <div class="entity" id="configParameter">
+      <h3>config parameter<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/configParameter</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Configuration"
+                  title="http://www.prostep.org/ontologies/tlo/Configuration">Configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#anyType"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#anyType">any type</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="description">
+      <h3>description<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/description</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CollaborationElement"
+                  title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="end">
+      <h3>end<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/end</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Product" title="http://www.prostep.org/ontologies/tlo/Product">Product</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#date"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#date">date</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="identifier">
+      <h3>identifier<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/identifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CollaborationElement"
+                  title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="name">
+      <h3>name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/name</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Product" title="http://www.prostep.org/ontologies/tlo/Product">Product</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="number">
+      <h3>number<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/number</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CollaborationElement"
+                  title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">non negative integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="start">
+      <h3>start<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/start</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Product" title="http://www.prostep.org/ontologies/tlo/Product">Product</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#date"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#date">date</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="status">
+      <h3>status<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/status</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Version" title="http://www.prostep.org/ontologies/tlo/Version">Version</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="title">
+      <h3>title<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.prostep.org/ontologies/tlo/title</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CollaborationElement"
+                  title="http://www.prostep.org/ontologies/tlo/CollaborationElement">Collaboration Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+-  </span>
+
+</div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>

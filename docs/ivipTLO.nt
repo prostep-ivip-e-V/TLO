@@ -1,8 +1,7 @@
-<http://www.prostep.org/ontologies/datamodel#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.prostep.org/ontologies/datamodel#> <http://purl.org/dc/elements/1.1/creator> "prostep ivip" .
-<http://www.prostep.org/ontologies/datamodel#> <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" .
-<http://www.prostep.org/ontologies/datamodel#> <http://purl.org/dc/elements/1.1/title> "TopLevel DataModel Ontology" .
-<http://www.prostep.org/ontologies/datamodel#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+<http://www.prostep.org/ontologies/tlo/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.prostep.org/ontologies/tlo/> <http://purl.org/dc/elements/1.1/creator> "prostep ivip" .
+<http://www.prostep.org/ontologies/tlo/> <http://purl.org/dc/elements/1.1/title> "TopLevel DataModel Ontology" .
+<http://www.prostep.org/ontologies/tlo/> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
 # 
 # 
 # #################################################################
@@ -45,169 +44,199 @@
 # #################################################################
 # 
 # 
-# http://www.prostep.org/ontologies/datamodel#affects
-<http://www.prostep.org/ontologies/datamodel#affects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#affects> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Variation> .
-<http://www.prostep.org/ontologies/datamodel#affects> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Requirement> .
-<http://www.prostep.org/ontologies/datamodel#affects> <http://www.w3.org/2000/01/rdf-schema#label> "affects" .
+# http://www.prostep.org/ontologies/tlo/affects
+<http://www.prostep.org/ontologies/tlo/affects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/affects> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Variation> .
+<http://www.prostep.org/ontologies/tlo/affects> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Requirement> .
+<http://www.prostep.org/ontologies/tlo/affects> <http://www.w3.org/2000/01/rdf-schema#label> "affects" .
 # 
-# http://www.prostep.org/ontologies/datamodel#assignedTo
-<http://www.prostep.org/ontologies/datamodel#assignedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#assignedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Task> .
-<http://www.prostep.org/ontologies/datamodel#assignedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#ResponsiblePerson> .
-<http://www.prostep.org/ontologies/datamodel#assignedTo> <http://www.w3.org/2000/01/rdf-schema#label> "assigned to" .
+# http://www.prostep.org/ontologies/tlo/assignedTo
+<http://www.prostep.org/ontologies/tlo/assignedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/assignedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Task> .
+<http://www.prostep.org/ontologies/tlo/assignedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/ResponsiblePerson> .
+<http://www.prostep.org/ontologies/tlo/assignedTo> <http://www.w3.org/2000/01/rdf-schema#label> "assigned to" .
 # 
-# http://www.prostep.org/ontologies/datamodel#basisFor
-<http://www.prostep.org/ontologies/datamodel#basisFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#basisFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Variation> .
-<http://www.prostep.org/ontologies/datamodel#basisFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Configuration> .
-<http://www.prostep.org/ontologies/datamodel#basisFor> <http://www.w3.org/2000/01/rdf-schema#label> "basis for" .
+# http://www.prostep.org/ontologies/tlo/basisFor
+<http://www.prostep.org/ontologies/tlo/basisFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/basisFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Variation> .
+<http://www.prostep.org/ontologies/tlo/basisFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Configuration> .
+<http://www.prostep.org/ontologies/tlo/basisFor> <http://www.w3.org/2000/01/rdf-schema#label> "basis for" .
 # 
-# http://www.prostep.org/ontologies/datamodel#configurableBy
-<http://www.prostep.org/ontologies/datamodel#configurableBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#configurableBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#configurableBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Configuration> .
-<http://www.prostep.org/ontologies/datamodel#configurableBy> <http://www.w3.org/2000/01/rdf-schema#label> "configurable by" .
+# http://www.prostep.org/ontologies/tlo/configurableBy
+<http://www.prostep.org/ontologies/tlo/configurableBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/configurableBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/configurableBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Configuration> .
+<http://www.prostep.org/ontologies/tlo/configurableBy> <http://www.w3.org/2000/01/rdf-schema#label> "configurable by" .
 # 
-# http://www.prostep.org/ontologies/datamodel#consistsOf
-<http://www.prostep.org/ontologies/datamodel#consistsOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#consistsOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Run> .
-<http://www.prostep.org/ontologies/datamodel#consistsOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Task> .
-<http://www.prostep.org/ontologies/datamodel#consistsOf> <http://www.w3.org/2000/01/rdf-schema#label> "consists of" .
+# http://www.prostep.org/ontologies/tlo/consistsOf
+<http://www.prostep.org/ontologies/tlo/consistsOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/consistsOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Run> .
+<http://www.prostep.org/ontologies/tlo/consistsOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Task> .
+<http://www.prostep.org/ontologies/tlo/consistsOf> <http://www.w3.org/2000/01/rdf-schema#label> "consists of" .
 # 
-# http://www.prostep.org/ontologies/datamodel#definedBy
-<http://www.prostep.org/ontologies/datamodel#definedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#definedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Criteria> .
-<http://www.prostep.org/ontologies/datamodel#definedBy> <http://www.w3.org/2000/01/rdf-schema#label> "defined by" .
+# http://www.prostep.org/ontologies/tlo/definedBy
+<http://www.prostep.org/ontologies/tlo/definedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/definedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Criteria> .
+<http://www.prostep.org/ontologies/tlo/definedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Requirement> .
+<http://www.prostep.org/ontologies/tlo/definedBy> <http://www.w3.org/2000/01/rdf-schema#label> "defined by" .
 # 
-# http://www.prostep.org/ontologies/datamodel#defines
-<http://www.prostep.org/ontologies/datamodel#defines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#defines> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Requirement> .
-<http://www.prostep.org/ontologies/datamodel#defines> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Variation> .
-<http://www.prostep.org/ontologies/datamodel#defines> <http://www.w3.org/2000/01/rdf-schema#label> "defines" .
+# http://www.prostep.org/ontologies/tlo/defines
+<http://www.prostep.org/ontologies/tlo/defines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/defines> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Requirement> .
+<http://www.prostep.org/ontologies/tlo/defines> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Variation> .
+<http://www.prostep.org/ontologies/tlo/defines> <http://www.w3.org/2000/01/rdf-schema#label> "defines" .
 # 
-# http://www.prostep.org/ontologies/datamodel#derivedFrom
-<http://www.prostep.org/ontologies/datamodel#derivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#derivedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Requirement> .
-<http://www.prostep.org/ontologies/datamodel#derivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "derived from" .
+# http://www.prostep.org/ontologies/tlo/derivedFrom
+<http://www.prostep.org/ontologies/tlo/derivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/derivedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Requirement> .
+<http://www.prostep.org/ontologies/tlo/derivedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Requirement> .
+<http://www.prostep.org/ontologies/tlo/derivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "derived from" .
 # 
-# http://www.prostep.org/ontologies/datamodel#focusOn
-<http://www.prostep.org/ontologies/datamodel#focusOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#focusOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Project> .
-<http://www.prostep.org/ontologies/datamodel#focusOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Product> .
-<http://www.prostep.org/ontologies/datamodel#focusOn> <http://www.w3.org/2000/01/rdf-schema#label> "focus on" .
+# http://www.prostep.org/ontologies/tlo/focusOn
+<http://www.prostep.org/ontologies/tlo/focusOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/focusOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Project> .
+<http://www.prostep.org/ontologies/tlo/focusOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Product> .
+<http://www.prostep.org/ontologies/tlo/focusOn> <http://www.w3.org/2000/01/rdf-schema#label> "focus on" .
 # 
-# http://www.prostep.org/ontologies/datamodel#fullfill
-<http://www.prostep.org/ontologies/datamodel#fullfill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#fullfill> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Result> .
-<http://www.prostep.org/ontologies/datamodel#fullfill> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Criteria> .
-<http://www.prostep.org/ontologies/datamodel#fullfill> <http://www.w3.org/2000/01/rdf-schema#label> "fullfill" .
+# http://www.prostep.org/ontologies/tlo/fullfill
+<http://www.prostep.org/ontologies/tlo/fullfill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/fullfill> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Result> .
+<http://www.prostep.org/ontologies/tlo/fullfill> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Criteria> .
+<http://www.prostep.org/ontologies/tlo/fullfill> <http://www.w3.org/2000/01/rdf-schema#label> "fullfill" .
 # 
-# http://www.prostep.org/ontologies/datamodel#hasPlan
-<http://www.prostep.org/ontologies/datamodel#hasPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#hasPlan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Project> .
-<http://www.prostep.org/ontologies/datamodel#hasPlan> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Plan> .
-<http://www.prostep.org/ontologies/datamodel#hasPlan> <http://www.w3.org/2000/01/rdf-schema#label> "has plan" .
+# http://www.prostep.org/ontologies/tlo/hasPlan
+<http://www.prostep.org/ontologies/tlo/hasPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/hasPlan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Project> .
+<http://www.prostep.org/ontologies/tlo/hasPlan> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Plan> .
+<http://www.prostep.org/ontologies/tlo/hasPlan> <http://www.w3.org/2000/01/rdf-schema#label> "has plan" .
 # 
-# http://www.prostep.org/ontologies/datamodel#hasSpecific
-<http://www.prostep.org/ontologies/datamodel#hasSpecific> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#hasSpecific> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Version> .
-<http://www.prostep.org/ontologies/datamodel#hasSpecific> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Configuration> .
-<http://www.prostep.org/ontologies/datamodel#hasSpecific> <http://www.w3.org/2000/01/rdf-schema#label> "has specific" .
+# http://www.prostep.org/ontologies/tlo/hasSpecific
+<http://www.prostep.org/ontologies/tlo/hasSpecific> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/hasSpecific> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Version> .
+<http://www.prostep.org/ontologies/tlo/hasSpecific> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Configuration> .
+<http://www.prostep.org/ontologies/tlo/hasSpecific> <http://www.w3.org/2000/01/rdf-schema#label> "has specific" .
 # 
-# http://www.prostep.org/ontologies/datamodel#hasSubElement
-<http://www.prostep.org/ontologies/datamodel#hasSubElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#hasSubElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#hasSubElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#hasSubElement> <http://www.w3.org/2000/01/rdf-schema#label> "has sub element" .
+# http://www.prostep.org/ontologies/tlo/hasSubElement
+<http://www.prostep.org/ontologies/tlo/hasSubElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/hasSubElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/hasSubElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/hasSubElement> <http://www.w3.org/2000/01/rdf-schema#label> "has sub element" .
 # 
-# http://www.prostep.org/ontologies/datamodel#hasSubstructure
-<http://www.prostep.org/ontologies/datamodel#hasSubstructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#hasSubstructure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Structure> .
-<http://www.prostep.org/ontologies/datamodel#hasSubstructure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Structure> .
-<http://www.prostep.org/ontologies/datamodel#hasSubstructure> <http://www.w3.org/2000/01/rdf-schema#label> "has substructure" .
+# http://www.prostep.org/ontologies/tlo/hasSubstructure
+<http://www.prostep.org/ontologies/tlo/hasSubstructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/hasSubstructure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Structure> .
+<http://www.prostep.org/ontologies/tlo/hasSubstructure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Structure> .
+<http://www.prostep.org/ontologies/tlo/hasSubstructure> <http://www.w3.org/2000/01/rdf-schema#label> "has substructure" .
 # 
-# http://www.prostep.org/ontologies/datamodel#hasVersion
-<http://www.prostep.org/ontologies/datamodel#hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#hasVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#hasVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Version> .
-<http://www.prostep.org/ontologies/datamodel#hasVersion> <http://www.w3.org/2000/01/rdf-schema#label> "has version" .
+# http://www.prostep.org/ontologies/tlo/hasVersion
+<http://www.prostep.org/ontologies/tlo/hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/hasVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/hasVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Version> .
+<http://www.prostep.org/ontologies/tlo/hasVersion> <http://www.w3.org/2000/01/rdf-schema#label> "has version" .
 # 
-# http://www.prostep.org/ontologies/datamodel#isPartOf
-<http://www.prostep.org/ontologies/datamodel#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#TechnicalPart> .
-<http://www.prostep.org/ontologies/datamodel#isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "is part of" .
+# http://www.prostep.org/ontologies/tlo/isPartOf
+<http://www.prostep.org/ontologies/tlo/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/TechnicalPart> .
+<http://www.prostep.org/ontologies/tlo/isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Product> .
+<http://www.prostep.org/ontologies/tlo/isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "is part of" .
 # 
-# http://www.prostep.org/ontologies/datamodel#isRelatedTo
-<http://www.prostep.org/ontologies/datamodel#isRelatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#isRelatedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Model> .
-<http://www.prostep.org/ontologies/datamodel#isRelatedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Product> .
-<http://www.prostep.org/ontologies/datamodel#isRelatedTo> <http://www.w3.org/2000/01/rdf-schema#label> "is related to" .
+# http://www.prostep.org/ontologies/tlo/isRelatedTo
+<http://www.prostep.org/ontologies/tlo/isRelatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/isRelatedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Model> .
+<http://www.prostep.org/ontologies/tlo/isRelatedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Product> .
+<http://www.prostep.org/ontologies/tlo/isRelatedTo> <http://www.w3.org/2000/01/rdf-schema#label> "is related to" .
 # 
-# http://www.prostep.org/ontologies/datamodel#performedWith
-<http://www.prostep.org/ontologies/datamodel#performedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#performedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Run> .
-<http://www.prostep.org/ontologies/datamodel#performedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Version> .
-<http://www.prostep.org/ontologies/datamodel#performedWith> <http://www.w3.org/2000/01/rdf-schema#label> "performed with" .
+# http://www.prostep.org/ontologies/tlo/performedWith
+<http://www.prostep.org/ontologies/tlo/performedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/performedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Run> .
+<http://www.prostep.org/ontologies/tlo/performedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Version> .
+<http://www.prostep.org/ontologies/tlo/performedWith> <http://www.w3.org/2000/01/rdf-schema#label> "performed with" .
 # 
-# http://www.prostep.org/ontologies/datamodel#realizedBy
-<http://www.prostep.org/ontologies/datamodel#realizedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#realizedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Interface> .
-<http://www.prostep.org/ontologies/datamodel#realizedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#realizedBy> <http://www.w3.org/2000/01/rdf-schema#label> "realized by" .
+# http://www.prostep.org/ontologies/tlo/plannedBy
+<http://www.prostep.org/ontologies/tlo/plannedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/plannedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Test> .
+<http://www.prostep.org/ontologies/tlo/plannedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Plan> .
+<http://www.prostep.org/ontologies/tlo/plannedBy> <http://www.w3.org/2000/01/rdf-schema#label> "planned by" .
 # 
-# http://www.prostep.org/ontologies/datamodel#refersTo
-<http://www.prostep.org/ontologies/datamodel#refersTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#refersTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Requirement> .
-<http://www.prostep.org/ontologies/datamodel#refersTo> <http://www.w3.org/2000/01/rdf-schema#label> "refers to" .
+# http://www.prostep.org/ontologies/tlo/realizedBy
+<http://www.prostep.org/ontologies/tlo/realizedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/realizedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Interface> .
+<http://www.prostep.org/ontologies/tlo/realizedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/realizedBy> <http://www.w3.org/2000/01/rdf-schema#label> "realized by" .
 # 
-# http://www.prostep.org/ontologies/datamodel#relatesTo
-<http://www.prostep.org/ontologies/datamodel#relatesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#relatesTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#View> .
-<http://www.prostep.org/ontologies/datamodel#relatesTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#relatesTo> <http://www.w3.org/2000/01/rdf-schema#label> "relates to" .
+# http://www.prostep.org/ontologies/tlo/refersTo
+<http://www.prostep.org/ontologies/tlo/refersTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/refersTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Requirement> .
+<http://www.prostep.org/ontologies/tlo/refersTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Product> .
+<http://www.prostep.org/ontologies/tlo/refersTo> <http://www.w3.org/2000/01/rdf-schema#label> "refers to" .
 # 
-# http://www.prostep.org/ontologies/datamodel#satisfiedBy
-<http://www.prostep.org/ontologies/datamodel#satisfiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#satisfiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#UseCase> .
-<http://www.prostep.org/ontologies/datamodel#satisfiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Requirement> .
-<http://www.prostep.org/ontologies/datamodel#satisfiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "satisfied by" .
+# http://www.prostep.org/ontologies/tlo/relatesTo
+<http://www.prostep.org/ontologies/tlo/relatesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/relatesTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/View> .
+<http://www.prostep.org/ontologies/tlo/relatesTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/relatesTo> <http://www.w3.org/2000/01/rdf-schema#label> "relates to" .
 # 
-# http://www.prostep.org/ontologies/datamodel#specificFor
-<http://www.prostep.org/ontologies/datamodel#specificFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#specificFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#View> .
-<http://www.prostep.org/ontologies/datamodel#specificFor> <http://www.w3.org/2000/01/rdf-schema#label> "specific for" .
+# http://www.prostep.org/ontologies/tlo/satisfiedBy
+<http://www.prostep.org/ontologies/tlo/satisfiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/satisfiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/UseCase> .
+<http://www.prostep.org/ontologies/tlo/satisfiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Requirement> .
+<http://www.prostep.org/ontologies/tlo/satisfiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "satisfied by" .
 # 
-# http://www.prostep.org/ontologies/datamodel#structurableBy
-<http://www.prostep.org/ontologies/datamodel#structurableBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#structurableBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Plan> .
-<http://www.prostep.org/ontologies/datamodel#structurableBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Product> .
-<http://www.prostep.org/ontologies/datamodel#structurableBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Project> .
-<http://www.prostep.org/ontologies/datamodel#structurableBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Structure> .
-<http://www.prostep.org/ontologies/datamodel#structurableBy> <http://www.w3.org/2000/01/rdf-schema#label> "structurable by" .
+# http://www.prostep.org/ontologies/tlo/scheduledBy
+<http://www.prostep.org/ontologies/tlo/scheduledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/scheduledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Run> .
+<http://www.prostep.org/ontologies/tlo/scheduledBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Plan> .
+<http://www.prostep.org/ontologies/tlo/scheduledBy> <http://www.w3.org/2000/01/rdf-schema#label> "scheduled by"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#targetOf
-<http://www.prostep.org/ontologies/datamodel#targetOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#targetOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Requirement> .
-<http://www.prostep.org/ontologies/datamodel#targetOf> <http://www.w3.org/2000/01/rdf-schema#label> "target of" .
+# http://www.prostep.org/ontologies/tlo/specificFor
+<http://www.prostep.org/ontologies/tlo/specificFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/specificFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/View> .
+<http://www.prostep.org/ontologies/tlo/specificFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Version> .
+<http://www.prostep.org/ontologies/tlo/specificFor> <http://www.w3.org/2000/01/rdf-schema#label> "specific for" .
 # 
-# http://www.prostep.org/ontologies/datamodel#usageDefinedBy
-<http://www.prostep.org/ontologies/datamodel#usageDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#usageDefinedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Product> .
-<http://www.prostep.org/ontologies/datamodel#usageDefinedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#UseCase> .
-<http://www.prostep.org/ontologies/datamodel#usageDefinedBy> <http://www.w3.org/2000/01/rdf-schema#label> "usage defined by" .
+# http://www.prostep.org/ontologies/tlo/structurableBy
+<http://www.prostep.org/ontologies/tlo/structurableBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/structurableBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/tlo/Project> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/tlo/Product> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/tlo/Plan> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/structurableBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Structure> .
+<http://www.prostep.org/ontologies/tlo/structurableBy> <http://www.w3.org/2000/01/rdf-schema#label> "structurable by" .
 # 
-# http://www.prostep.org/ontologies/datamodel#uses
-<http://www.prostep.org/ontologies/datamodel#uses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#uses> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#uses> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Interface> .
-<http://www.prostep.org/ontologies/datamodel#uses> <http://www.w3.org/2000/01/rdf-schema#label> "uses" .
+# http://www.prostep.org/ontologies/tlo/targetOf
+<http://www.prostep.org/ontologies/tlo/targetOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/targetOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/TechnicalPart> .
+<http://www.prostep.org/ontologies/tlo/targetOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Requirement> .
+<http://www.prostep.org/ontologies/tlo/targetOf> <http://www.w3.org/2000/01/rdf-schema#label> "target of" .
 # 
-# http://www.prostep.org/ontologies/datamodel#variedBy
-<http://www.prostep.org/ontologies/datamodel#variedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.prostep.org/ontologies/datamodel#variedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Structure> .
-<http://www.prostep.org/ontologies/datamodel#variedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/datamodel#Variation> .
-<http://www.prostep.org/ontologies/datamodel#variedBy> <http://www.w3.org/2000/01/rdf-schema#label> "varied by" .
+# http://www.prostep.org/ontologies/tlo/usageDefinedBy
+<http://www.prostep.org/ontologies/tlo/usageDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/usageDefinedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Product> .
+<http://www.prostep.org/ontologies/tlo/usageDefinedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/UseCase> .
+<http://www.prostep.org/ontologies/tlo/usageDefinedBy> <http://www.w3.org/2000/01/rdf-schema#label> "usage defined by" .
+# 
+# http://www.prostep.org/ontologies/tlo/uses
+<http://www.prostep.org/ontologies/tlo/uses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/uses> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/uses> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Interface> .
+<http://www.prostep.org/ontologies/tlo/uses> <http://www.w3.org/2000/01/rdf-schema#label> "uses" .
+# 
+# http://www.prostep.org/ontologies/tlo/variedBy
+<http://www.prostep.org/ontologies/tlo/variedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.prostep.org/ontologies/tlo/variedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Structure> .
+<http://www.prostep.org/ontologies/tlo/variedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.prostep.org/ontologies/tlo/Variation> .
+<http://www.prostep.org/ontologies/tlo/variedBy> <http://www.w3.org/2000/01/rdf-schema#label> "varied by" .
 # 
 # 
 # 
@@ -218,58 +247,59 @@
 # #################################################################
 # 
 # 
-# http://www.prostep.org/ontologies/datamodel#configParameter
-<http://www.prostep.org/ontologies/datamodel#configParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.prostep.org/ontologies/datamodel#configParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Configuration> .
-<http://www.prostep.org/ontologies/datamodel#configParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyType> .
-<http://www.prostep.org/ontologies/datamodel#configParameter> <http://www.w3.org/2000/01/rdf-schema#label> "config parameter" .
+# http://www.prostep.org/ontologies/tlo/configParameter
+<http://www.prostep.org/ontologies/tlo/configParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.prostep.org/ontologies/tlo/configParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Configuration> .
+<http://www.prostep.org/ontologies/tlo/configParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyType> .
+<http://www.prostep.org/ontologies/tlo/configParameter> <http://www.w3.org/2000/01/rdf-schema#label> "config parameter" .
 # 
-# http://www.prostep.org/ontologies/datamodel#description
-<http://www.prostep.org/ontologies/datamodel#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.prostep.org/ontologies/datamodel#description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.prostep.org/ontologies/datamodel#description> <http://www.w3.org/2000/01/rdf-schema#label> "description" .
+# http://www.prostep.org/ontologies/tlo/description
+<http://www.prostep.org/ontologies/tlo/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.prostep.org/ontologies/tlo/description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.prostep.org/ontologies/tlo/description> <http://www.w3.org/2000/01/rdf-schema#label> "description" .
 # 
-# http://www.prostep.org/ontologies/datamodel#end
-<http://www.prostep.org/ontologies/datamodel#end> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.prostep.org/ontologies/datamodel#end> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Product> .
-<http://www.prostep.org/ontologies/datamodel#end> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<http://www.prostep.org/ontologies/datamodel#end> <http://www.w3.org/2000/01/rdf-schema#label> "end" .
+# http://www.prostep.org/ontologies/tlo/end
+<http://www.prostep.org/ontologies/tlo/end> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.prostep.org/ontologies/tlo/end> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Product> .
+<http://www.prostep.org/ontologies/tlo/end> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.prostep.org/ontologies/tlo/end> <http://www.w3.org/2000/01/rdf-schema#label> "end" .
 # 
-# http://www.prostep.org/ontologies/datamodel#identifier
-<http://www.prostep.org/ontologies/datamodel#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.prostep.org/ontologies/datamodel#identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.prostep.org/ontologies/datamodel#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier" .
+# http://www.prostep.org/ontologies/tlo/identifier
+<http://www.prostep.org/ontologies/tlo/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.prostep.org/ontologies/tlo/identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.prostep.org/ontologies/tlo/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier" .
 # 
-# http://www.prostep.org/ontologies/datamodel#name
-<http://www.prostep.org/ontologies/datamodel#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.prostep.org/ontologies/datamodel#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Product> .
-<http://www.prostep.org/ontologies/datamodel#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.prostep.org/ontologies/datamodel#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# http://www.prostep.org/ontologies/tlo/name
+<http://www.prostep.org/ontologies/tlo/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.prostep.org/ontologies/tlo/name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Product> .
+<http://www.prostep.org/ontologies/tlo/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.prostep.org/ontologies/tlo/name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
 # 
-# http://www.prostep.org/ontologies/datamodel#number
-<http://www.prostep.org/ontologies/datamodel#number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.prostep.org/ontologies/datamodel#number> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#number> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<http://www.prostep.org/ontologies/datamodel#number> <http://www.w3.org/2000/01/rdf-schema#label> "number" .
+# http://www.prostep.org/ontologies/tlo/number
+<http://www.prostep.org/ontologies/tlo/number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.prostep.org/ontologies/tlo/number> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/number> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.prostep.org/ontologies/tlo/number> <http://www.w3.org/2000/01/rdf-schema#label> "number" .
 # 
-# http://www.prostep.org/ontologies/datamodel#start
-<http://www.prostep.org/ontologies/datamodel#start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.prostep.org/ontologies/datamodel#start> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Product> .
-<http://www.prostep.org/ontologies/datamodel#start> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<http://www.prostep.org/ontologies/datamodel#start> <http://www.w3.org/2000/01/rdf-schema#label> "start" .
+# http://www.prostep.org/ontologies/tlo/start
+<http://www.prostep.org/ontologies/tlo/start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.prostep.org/ontologies/tlo/start> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Product> .
+<http://www.prostep.org/ontologies/tlo/start> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.prostep.org/ontologies/tlo/start> <http://www.w3.org/2000/01/rdf-schema#label> "start" .
 # 
-# http://www.prostep.org/ontologies/datamodel#status
-<http://www.prostep.org/ontologies/datamodel#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.prostep.org/ontologies/datamodel#status> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#Version> .
-<http://www.prostep.org/ontologies/datamodel#status> <http://www.w3.org/2000/01/rdf-schema#label> "status" .
+# http://www.prostep.org/ontologies/tlo/status
+<http://www.prostep.org/ontologies/tlo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.prostep.org/ontologies/tlo/status> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/Version> .
+<http://www.prostep.org/ontologies/tlo/status> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.prostep.org/ontologies/tlo/status> <http://www.w3.org/2000/01/rdf-schema#label> "status" .
 # 
-# http://www.prostep.org/ontologies/datamodel#title
-<http://www.prostep.org/ontologies/datamodel#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.prostep.org/ontologies/datamodel#title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.prostep.org/ontologies/datamodel#title> <http://www.w3.org/2000/01/rdf-schema#label> "title" .
+# http://www.prostep.org/ontologies/tlo/title
+<http://www.prostep.org/ontologies/tlo/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.prostep.org/ontologies/tlo/title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.prostep.org/ontologies/tlo/title> <http://www.w3.org/2000/01/rdf-schema#label> "title" .
 # 
 # 
 # 
@@ -280,112 +310,137 @@
 # #################################################################
 # 
 # 
-# http://www.prostep.org/ontologies/datamodel#CollaborationElement
-<http://www.prostep.org/ontologies/datamodel#CollaborationElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#CollaborationElement> <http://www.w3.org/2000/01/rdf-schema#label> "Collaboration Element" .
+# http://www.prostep.org/ontologies/tlo/CollaborationElement
+<http://www.prostep.org/ontologies/tlo/CollaborationElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/CollaborationElement> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract super-element from which (all) elements are derived, which are exchanged or linked."@en .
+<http://www.prostep.org/ontologies/tlo/CollaborationElement> <http://www.w3.org/2000/01/rdf-schema#label> "Collaboration Element"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#Configuration
-<http://www.prostep.org/ontologies/datamodel#Configuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#Configuration> <http://www.w3.org/2000/01/rdf-schema#label> "Configuration" .
+# http://www.prostep.org/ontologies/tlo/Configuration
+<http://www.prostep.org/ontologies/tlo/Configuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/Configuration> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract element that describes attributes, properties and relations that apply to all configurable elements."@en .
+<http://www.prostep.org/ontologies/tlo/Configuration> <http://www.w3.org/2000/01/rdf-schema#label> "Configuration"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#Criteria
-<http://www.prostep.org/ontologies/datamodel#Criteria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#Criteria> <http://www.w3.org/2000/01/rdf-schema#label> "Criteria" .
+# http://www.prostep.org/ontologies/tlo/Criteria
+<http://www.prostep.org/ontologies/tlo/Criteria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/Criteria> <http://www.w3.org/2000/01/rdf-schema#comment> "Criteria are derived from requirements and are used to validate results."@en .
+<http://www.prostep.org/ontologies/tlo/Criteria> <http://www.w3.org/2000/01/rdf-schema#label> "Criteria"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#FunctionalModel
-<http://www.prostep.org/ontologies/datamodel#FunctionalModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#FunctionalModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/datamodel#Model> .
-<http://www.prostep.org/ontologies/datamodel#FunctionalModel> <http://www.w3.org/2000/01/rdf-schema#label> "Functional Model" .
+# http://www.prostep.org/ontologies/tlo/FunctionalModel
+<http://www.prostep.org/ontologies/tlo/FunctionalModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/FunctionalModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/tlo/Model> .
+<http://www.prostep.org/ontologies/tlo/FunctionalModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Conceptual model of the collaboration element at the functional level."@en .
+<http://www.prostep.org/ontologies/tlo/FunctionalModel> <http://www.w3.org/2000/01/rdf-schema#label> "Functional Model"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#GeometricalModel
-<http://www.prostep.org/ontologies/datamodel#GeometricalModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#GeometricalModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/datamodel#Model> .
-<http://www.prostep.org/ontologies/datamodel#GeometricalModel> <http://www.w3.org/2000/01/rdf-schema#label> "Geometrical Model" .
+# http://www.prostep.org/ontologies/tlo/GeometricalModel
+<http://www.prostep.org/ontologies/tlo/GeometricalModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/GeometricalModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/tlo/Model> .
+<http://www.prostep.org/ontologies/tlo/GeometricalModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Conceptual model of the collaboration element at the geometrical level."@en .
+<http://www.prostep.org/ontologies/tlo/GeometricalModel> <http://www.w3.org/2000/01/rdf-schema#label> "Geometrical Model"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#Interface
-<http://www.prostep.org/ontologies/datamodel#Interface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#Interface> <http://www.w3.org/2000/01/rdf-schema#label> "Interface" .
+# http://www.prostep.org/ontologies/tlo/Interface
+<http://www.prostep.org/ontologies/tlo/Interface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/Interface> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a generic interface of a system component."@en .
+<http://www.prostep.org/ontologies/tlo/Interface> <http://www.w3.org/2000/01/rdf-schema#label> "Interface"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#Model
-<http://www.prostep.org/ontologies/datamodel#Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#Model> <http://www.w3.org/2000/01/rdf-schema#label> "Model" .
+# http://www.prostep.org/ontologies/tlo/Model
+<http://www.prostep.org/ontologies/tlo/Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/Model> <http://www.w3.org/2000/01/rdf-schema#comment> "Conceptual model of the collaboration element."@en .
+<http://www.prostep.org/ontologies/tlo/Model> <http://www.w3.org/2000/01/rdf-schema#label> "Model"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#Plan
-<http://www.prostep.org/ontologies/datamodel#Plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#Plan> <http://www.w3.org/2000/01/rdf-schema#label> "Plan" .
+# http://www.prostep.org/ontologies/tlo/Plan
+<http://www.prostep.org/ontologies/tlo/Plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/Plan> <http://www.w3.org/2000/01/rdf-schema#comment> "Structured conception of the way in which a particular goal is to be pursued, a particular task or project is to be realized. Includes intermediate and final results to be achieved with a timeline of how and when they will be achieved."@en .
+<http://www.prostep.org/ontologies/tlo/Plan> <http://www.w3.org/2000/01/rdf-schema#label> "Plan"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#Product
-<http://www.prostep.org/ontologies/datamodel#Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#Product> <http://www.w3.org/2000/01/rdf-schema#label> "Product" .
+# http://www.prostep.org/ontologies/tlo/Product
+<http://www.prostep.org/ontologies/tlo/Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/Product> <http://www.w3.org/2000/01/rdf-schema#comment> "The project result that is generated based on the (customer) requirements within a project."@en .
+<http://www.prostep.org/ontologies/tlo/Product> <http://www.w3.org/2000/01/rdf-schema#label> "Product"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#Project
-<http://www.prostep.org/ontologies/datamodel#Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#Project> <http://www.w3.org/2000/01/rdf-schema#label> "Project" .
+# http://www.prostep.org/ontologies/tlo/Project
+<http://www.prostep.org/ontologies/tlo/Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/Project> <http://www.w3.org/2000/01/rdf-schema#comment> "A project is a temporary endeavour undertaken to create a unique product, service, or result."@en .
+<http://www.prostep.org/ontologies/tlo/Project> <http://www.w3.org/2000/01/rdf-schema#label> "Project"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#Requirement
-<http://www.prostep.org/ontologies/datamodel#Requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#Requirement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#Requirement> <http://www.w3.org/2000/01/rdf-schema#label> "Requirement" .
+# http://www.prostep.org/ontologies/tlo/Requirement
+<http://www.prostep.org/ontologies/tlo/Requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/Requirement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/Requirement> <http://www.w3.org/2000/01/rdf-schema#comment> "A singular documented physical or functional need that a particular design, product or process aims to satisfy."@en .
+<http://www.prostep.org/ontologies/tlo/Requirement> <http://www.w3.org/2000/01/rdf-schema#label> "Requirement"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#ResponsiblePerson
-<http://www.prostep.org/ontologies/datamodel#ResponsiblePerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#ResponsiblePerson> <http://www.w3.org/2000/01/rdf-schema#label> "Responsible Person" .
+# http://www.prostep.org/ontologies/tlo/ResponsiblePerson
+<http://www.prostep.org/ontologies/tlo/ResponsiblePerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/ResponsiblePerson> <http://www.w3.org/2000/01/rdf-schema#comment> "A natural person."@en .
+<http://www.prostep.org/ontologies/tlo/ResponsiblePerson> <http://www.w3.org/2000/01/rdf-schema#label> "Responsible Person"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#Result
-<http://www.prostep.org/ontologies/datamodel#Result> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#Result> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#Result> <http://www.w3.org/2000/01/rdf-schema#label> "Result" .
+# http://www.prostep.org/ontologies/tlo/Result
+<http://www.prostep.org/ontologies/tlo/Result> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/Result> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/Result> <http://www.w3.org/2000/01/rdf-schema#comment> "The result of a particular test (run), which is intended to verify the fulfillment of requirements."@en .
+<http://www.prostep.org/ontologies/tlo/Result> <http://www.w3.org/2000/01/rdf-schema#label> "Result"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#Run
-<http://www.prostep.org/ontologies/datamodel#Run> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#Run> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#Run> <http://www.w3.org/2000/01/rdf-schema#label> "Run" .
+# http://www.prostep.org/ontologies/tlo/Run
+<http://www.prostep.org/ontologies/tlo/Run> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/Run> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/Run> <http://www.w3.org/2000/01/rdf-schema#comment> "A single iteration of a test or UseCase verification."@en .
+<http://www.prostep.org/ontologies/tlo/Run> <http://www.w3.org/2000/01/rdf-schema#label> "Run"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#SimulationModel
-<http://www.prostep.org/ontologies/datamodel#SimulationModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#SimulationModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/datamodel#Model> .
-<http://www.prostep.org/ontologies/datamodel#SimulationModel> <http://www.w3.org/2000/01/rdf-schema#label> "Simulation Model" .
+# http://www.prostep.org/ontologies/tlo/SimulationModel
+<http://www.prostep.org/ontologies/tlo/SimulationModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/SimulationModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/tlo/Model> .
+<http://www.prostep.org/ontologies/tlo/SimulationModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Conceptual model of the collaboration element at the simulation level."@en .
+<http://www.prostep.org/ontologies/tlo/SimulationModel> <http://www.w3.org/2000/01/rdf-schema#label> "Simulation Model"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#Structure
-<http://www.prostep.org/ontologies/datamodel#Structure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#Structure> <http://www.w3.org/2000/01/rdf-schema#label> "Structure" .
+# http://www.prostep.org/ontologies/tlo/Structure
+<http://www.prostep.org/ontologies/tlo/Structure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/Structure> <http://www.w3.org/2000/01/rdf-schema#comment> "Structure of an element."@en .
+<http://www.prostep.org/ontologies/tlo/Structure> <http://www.w3.org/2000/01/rdf-schema#label> "Structure"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#SystemModel
-<http://www.prostep.org/ontologies/datamodel#SystemModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#SystemModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/datamodel#Model> .
-<http://www.prostep.org/ontologies/datamodel#SystemModel> <http://www.w3.org/2000/01/rdf-schema#label> "System Model" .
+# http://www.prostep.org/ontologies/tlo/SystemModel
+<http://www.prostep.org/ontologies/tlo/SystemModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/SystemModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/tlo/Model> .
+<http://www.prostep.org/ontologies/tlo/SystemModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Conceptual model of the collaboration element at the system level."@en .
+<http://www.prostep.org/ontologies/tlo/SystemModel> <http://www.w3.org/2000/01/rdf-schema#label> "System Model"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#Task
-<http://www.prostep.org/ontologies/datamodel#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#Task> <http://www.w3.org/2000/01/rdf-schema#label> "Task" .
+# http://www.prostep.org/ontologies/tlo/Task
+<http://www.prostep.org/ontologies/tlo/Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/Task> <http://www.w3.org/2000/01/rdf-schema#comment> "A task is a definite piece of work assigned to a person or organisation."@en .
+<http://www.prostep.org/ontologies/tlo/Task> <http://www.w3.org/2000/01/rdf-schema#label> "Task"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#TechnicalPart
-<http://www.prostep.org/ontologies/datamodel#TechnicalPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#TechnicalPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#TechnicalPart> <http://www.w3.org/2000/01/rdf-schema#label> "Technical Part" .
+# http://www.prostep.org/ontologies/tlo/TechnicalPart
+<http://www.prostep.org/ontologies/tlo/TechnicalPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/TechnicalPart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/TechnicalPart> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical/technical component of the product. A part can be a real mechatronic component, but also a software part."@en .
+<http://www.prostep.org/ontologies/tlo/TechnicalPart> <http://www.w3.org/2000/01/rdf-schema#label> "Technical Part"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#Test
-<http://www.prostep.org/ontologies/datamodel#Test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#Test> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#Test> <http://www.w3.org/2000/01/rdf-schema#label> "Test" .
+# http://www.prostep.org/ontologies/tlo/Test
+<http://www.prostep.org/ontologies/tlo/Test> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/Test> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/Test> <http://www.w3.org/2000/01/rdf-schema#comment> "Checking whether an object behaves as expected under conditions that are as realistic as possible and meets the requirements."@en .
+<http://www.prostep.org/ontologies/tlo/Test> <http://www.w3.org/2000/01/rdf-schema#label> "Test"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#UseCase
-<http://www.prostep.org/ontologies/datamodel#UseCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#UseCase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/datamodel#CollaborationElement> .
-<http://www.prostep.org/ontologies/datamodel#UseCase> <http://www.w3.org/2000/01/rdf-schema#label> "Use Case" .
+# http://www.prostep.org/ontologies/tlo/UseCase
+<http://www.prostep.org/ontologies/tlo/UseCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/UseCase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.prostep.org/ontologies/tlo/CollaborationElement> .
+<http://www.prostep.org/ontologies/tlo/UseCase> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific situation in which a product or service could potentially be used."@en .
+<http://www.prostep.org/ontologies/tlo/UseCase> <http://www.w3.org/2000/01/rdf-schema#label> "Use Case"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#Variation
-<http://www.prostep.org/ontologies/datamodel#Variation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#Variation> <http://www.w3.org/2000/01/rdf-schema#label> "Variation" .
+# http://www.prostep.org/ontologies/tlo/Variation
+<http://www.prostep.org/ontologies/tlo/Variation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/Variation> <http://www.w3.org/2000/01/rdf-schema#comment> "Variations are subsets of attributes derived from the structure and defined by the requirements that affect the configuration."@en .
+<http://www.prostep.org/ontologies/tlo/Variation> <http://www.w3.org/2000/01/rdf-schema#label> "Variation"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#Version
-<http://www.prostep.org/ontologies/datamodel#Version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#Version> <http://www.w3.org/2000/01/rdf-schema#label> "Version" .
+# http://www.prostep.org/ontologies/tlo/Version
+<http://www.prostep.org/ontologies/tlo/Version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/Version> <http://www.w3.org/2000/01/rdf-schema#comment> "The state of an Collaboration Element."@en .
+<http://www.prostep.org/ontologies/tlo/Version> <http://www.w3.org/2000/01/rdf-schema#label> "Version"@en .
 # 
-# http://www.prostep.org/ontologies/datamodel#View
-<http://www.prostep.org/ontologies/datamodel#View> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.prostep.org/ontologies/datamodel#View> <http://www.w3.org/2000/01/rdf-schema#label> "View" .
+# http://www.prostep.org/ontologies/tlo/View
+<http://www.prostep.org/ontologies/tlo/View> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.prostep.org/ontologies/tlo/View> <http://www.w3.org/2000/01/rdf-schema#comment> "A view is a specific perspective on a specific version of a collaboration element."@en .
+<http://www.prostep.org/ontologies/tlo/View> <http://www.w3.org/2000/01/rdf-schema#label> "View"@en .
 # 
 # 
 # 
@@ -396,46 +451,46 @@
 # #################################################################
 # 
 # 
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/datamodel#SystemModel> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/datamodel#SimulationModel> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/datamodel#GeometricalModel> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/datamodel#FunctionalModel> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-# 
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid6 <http://www.w3.org/2002/07/owl#members> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid6 <http://www.w3.org/2002/07/owl#members> _:genid10 .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/datamodel#UseCase> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/tlo/SystemModel> .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/datamodel#Test> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/tlo/SimulationModel> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/datamodel#TechnicalPart> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/tlo/GeometricalModel> .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/datamodel#Task> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/tlo/FunctionalModel> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/datamodel#Run> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/datamodel#Result> .
+# 
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid11 <http://www.w3.org/2002/07/owl#members> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/tlo/UseCase> .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/datamodel#Requirement> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/tlo/Test> .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/datamodel#Model> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/tlo/TechnicalPart> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/tlo/Task> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/tlo/Run> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/tlo/Result> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/tlo/Requirement> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.prostep.org/ontologies/tlo/Model> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
