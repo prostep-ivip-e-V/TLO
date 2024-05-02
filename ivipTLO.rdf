@@ -1,0 +1,780 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.prostep.org/ontologies/datamodel#"
+     xml:base="http://www.prostep.org/ontologies/datamodel"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.prostep.org/ontologies/datamodel#">
+        <dc:creator>prostep ivip</dc:creator>
+        <dc:description>Ontology code created by Chowlk</dc:description>
+        <dc:title>TopLevel DataModel Ontology</dc:title>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#anyType -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#anyType"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#affects -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#affects">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Variation"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Requirement"/>
+        <rdfs:label>affects</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#assignedTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#assignedTo">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Task"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#ResponsiblePerson"/>
+        <rdfs:label>assigned to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#basisFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#basisFor">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Variation"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Configuration"/>
+        <rdfs:label>basis for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#configurableBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#configurableBy">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Configuration"/>
+        <rdfs:label>configurable by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#consistsOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#consistsOf">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Run"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Task"/>
+        <rdfs:label>consists of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#definedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#definedBy">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Criteria"/>
+        <rdfs:label>defined by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#defines -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#defines">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Requirement"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Variation"/>
+        <rdfs:label>defines</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#derivedFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#derivedFrom">
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Requirement"/>
+        <rdfs:label>derived from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#focusOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#focusOn">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Project"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Product"/>
+        <rdfs:label>focus on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#fullfill -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#fullfill">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Result"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Criteria"/>
+        <rdfs:label>fullfill</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#hasPlan -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#hasPlan">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Project"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Plan"/>
+        <rdfs:label>has plan</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#hasSpecific -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#hasSpecific">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Version"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Configuration"/>
+        <rdfs:label>has specific</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#hasSubElement -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#hasSubElement">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:label>has sub element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#hasSubstructure -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#hasSubstructure">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Structure"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Structure"/>
+        <rdfs:label>has substructure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#hasVersion -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#hasVersion">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Version"/>
+        <rdfs:label>has version</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#isPartOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#isPartOf">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#TechnicalPart"/>
+        <rdfs:label>is part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#isRelatedTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#isRelatedTo">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Model"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Product"/>
+        <rdfs:label>is related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#performedWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#performedWith">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Run"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Version"/>
+        <rdfs:label>performed with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#realizedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#realizedBy">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Interface"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:label>realized by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#refersTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#refersTo">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Requirement"/>
+        <rdfs:label>refers to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#relatesTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#relatesTo">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#View"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:label>relates to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#satisfiedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#satisfiedBy">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#UseCase"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Requirement"/>
+        <rdfs:label>satisfied by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#specificFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#specificFor">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#View"/>
+        <rdfs:label>specific for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#structurableBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#structurableBy">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Plan"/>
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Product"/>
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Project"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Structure"/>
+        <rdfs:label>structurable by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#targetOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#targetOf">
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Requirement"/>
+        <rdfs:label>target of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#usageDefinedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#usageDefinedBy">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Product"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#UseCase"/>
+        <rdfs:label>usage defined by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#uses -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#uses">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Interface"/>
+        <rdfs:label>uses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#variedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.prostep.org/ontologies/datamodel#variedBy">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Structure"/>
+        <rdfs:range rdf:resource="http://www.prostep.org/ontologies/datamodel#Variation"/>
+        <rdfs:label>varied by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#configParameter -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.prostep.org/ontologies/datamodel#configParameter">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Configuration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyType"/>
+        <rdfs:label>config parameter</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#description -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.prostep.org/ontologies/datamodel#description">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#end -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.prostep.org/ontologies/datamodel#end">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>end</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.prostep.org/ontologies/datamodel#identifier">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.prostep.org/ontologies/datamodel#name">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#number -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.prostep.org/ontologies/datamodel#number">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:label>number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#start -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.prostep.org/ontologies/datamodel#start">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>start</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#status -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.prostep.org/ontologies/datamodel#status">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#Version"/>
+        <rdfs:label>status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.prostep.org/ontologies/datamodel#title">
+        <rdfs:domain rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#CollaborationElement -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#CollaborationElement">
+        <rdfs:label>Collaboration Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#Configuration -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#Configuration">
+        <rdfs:label>Configuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#Criteria -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#Criteria">
+        <rdfs:label>Criteria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#FunctionalModel -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#FunctionalModel">
+        <rdfs:subClassOf rdf:resource="http://www.prostep.org/ontologies/datamodel#Model"/>
+        <rdfs:label>Functional Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#GeometricalModel -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#GeometricalModel">
+        <rdfs:subClassOf rdf:resource="http://www.prostep.org/ontologies/datamodel#Model"/>
+        <rdfs:label>Geometrical Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#Interface -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#Interface">
+        <rdfs:label>Interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#Model -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#Model">
+        <rdfs:subClassOf rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:label>Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#Plan -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#Plan">
+        <rdfs:label>Plan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#Product -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#Product">
+        <rdfs:label>Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#Project -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#Project">
+        <rdfs:label>Project</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#Requirement -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:label>Requirement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#ResponsiblePerson -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#ResponsiblePerson">
+        <rdfs:label>Responsible Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#Result -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#Result">
+        <rdfs:subClassOf rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:label>Result</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#Run -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#Run">
+        <rdfs:subClassOf rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:label>Run</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#SimulationModel -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#SimulationModel">
+        <rdfs:subClassOf rdf:resource="http://www.prostep.org/ontologies/datamodel#Model"/>
+        <rdfs:label>Simulation Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#Structure -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#Structure">
+        <rdfs:label>Structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#SystemModel -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#SystemModel">
+        <rdfs:subClassOf rdf:resource="http://www.prostep.org/ontologies/datamodel#Model"/>
+        <rdfs:label>System Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#Task -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#Task">
+        <rdfs:label>Task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#TechnicalPart -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#TechnicalPart">
+        <rdfs:subClassOf rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:label>Technical Part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#Test -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#Test">
+        <rdfs:subClassOf rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:label>Test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#UseCase -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#UseCase">
+        <rdfs:subClassOf rdf:resource="http://www.prostep.org/ontologies/datamodel#CollaborationElement"/>
+        <rdfs:label>Use Case</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#Variation -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#Variation">
+        <rdfs:label>Variation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#Version -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#Version">
+        <rdfs:label>Version</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.prostep.org/ontologies/datamodel#View -->
+
+
+    <owl:Class rdf:about="http://www.prostep.org/ontologies/datamodel#View">
+        <rdfs:label>View</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.prostep.org/ontologies/datamodel#FunctionalModel"/>
+            <rdf:Description rdf:about="http://www.prostep.org/ontologies/datamodel#GeometricalModel"/>
+            <rdf:Description rdf:about="http://www.prostep.org/ontologies/datamodel#SimulationModel"/>
+            <rdf:Description rdf:about="http://www.prostep.org/ontologies/datamodel#SystemModel"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.prostep.org/ontologies/datamodel#Model"/>
+            <rdf:Description rdf:about="http://www.prostep.org/ontologies/datamodel#Requirement"/>
+            <rdf:Description rdf:about="http://www.prostep.org/ontologies/datamodel#Result"/>
+            <rdf:Description rdf:about="http://www.prostep.org/ontologies/datamodel#Run"/>
+            <rdf:Description rdf:about="http://www.prostep.org/ontologies/datamodel#Task"/>
+            <rdf:Description rdf:about="http://www.prostep.org/ontologies/datamodel#TechnicalPart"/>
+            <rdf:Description rdf:about="http://www.prostep.org/ontologies/datamodel#Test"/>
+            <rdf:Description rdf:about="http://www.prostep.org/ontologies/datamodel#UseCase"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

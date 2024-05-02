@@ -1,0 +1,466 @@
+@prefix : <http://www.prostep.org/ontologies/datamodel#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.prostep.org/ontologies/datamodel#> .
+
+<http://www.prostep.org/ontologies/datamodel#> rdf:type owl:Ontology ;
+                                                <http://purl.org/dc/elements/1.1/creator> "prostep ivip" ;
+                                                <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" ;
+                                                <http://purl.org/dc/elements/1.1/title> "TopLevel DataModel Ontology" ;
+                                                owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#anyType
+xsd:anyType rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.prostep.org/ontologies/datamodel#affects
+:affects rdf:type owl:ObjectProperty ;
+         rdfs:domain :Variation ;
+         rdfs:range :Requirement ;
+         rdfs:label "affects" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#assignedTo
+:assignedTo rdf:type owl:ObjectProperty ;
+            rdfs:domain :Task ;
+            rdfs:range :ResponsiblePerson ;
+            rdfs:label "assigned to" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#basisFor
+:basisFor rdf:type owl:ObjectProperty ;
+          rdfs:domain :Variation ;
+          rdfs:range :Configuration ;
+          rdfs:label "basis for" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#configurableBy
+:configurableBy rdf:type owl:ObjectProperty ;
+                rdfs:domain :CollaborationElement ;
+                rdfs:range :Configuration ;
+                rdfs:label "configurable by" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#consistsOf
+:consistsOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :Run ;
+            rdfs:range :Task ;
+            rdfs:label "consists of" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#definedBy
+:definedBy rdf:type owl:ObjectProperty ;
+           rdfs:domain :Criteria ;
+           rdfs:label "defined by" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#defines
+:defines rdf:type owl:ObjectProperty ;
+         rdfs:domain :Requirement ;
+         rdfs:range :Variation ;
+         rdfs:label "defines" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#derivedFrom
+:derivedFrom rdf:type owl:ObjectProperty ;
+             rdfs:range :Requirement ;
+             rdfs:label "derived from" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#focusOn
+:focusOn rdf:type owl:ObjectProperty ;
+         rdfs:domain :Project ;
+         rdfs:range :Product ;
+         rdfs:label "focus on" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#fullfill
+:fullfill rdf:type owl:ObjectProperty ;
+          rdfs:domain :Result ;
+          rdfs:range :Criteria ;
+          rdfs:label "fullfill" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#hasPlan
+:hasPlan rdf:type owl:ObjectProperty ;
+         rdfs:domain :Project ;
+         rdfs:range :Plan ;
+         rdfs:label "has plan" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#hasSpecific
+:hasSpecific rdf:type owl:ObjectProperty ;
+             rdfs:domain :Version ;
+             rdfs:range :Configuration ;
+             rdfs:label "has specific" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#hasSubElement
+:hasSubElement rdf:type owl:ObjectProperty ;
+               rdfs:domain :CollaborationElement ;
+               rdfs:range :CollaborationElement ;
+               rdfs:label "has sub element" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#hasSubstructure
+:hasSubstructure rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Structure ;
+                 rdfs:range :Structure ;
+                 rdfs:label "has substructure" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#hasVersion
+:hasVersion rdf:type owl:ObjectProperty ;
+            rdfs:domain :CollaborationElement ;
+            rdfs:range :Version ;
+            rdfs:label "has version" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#isPartOf
+:isPartOf rdf:type owl:ObjectProperty ;
+          rdfs:domain :TechnicalPart ;
+          rdfs:label "is part of" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#isRelatedTo
+:isRelatedTo rdf:type owl:ObjectProperty ;
+             rdfs:domain :Model ;
+             rdfs:range :Product ;
+             rdfs:label "is related to" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#performedWith
+:performedWith rdf:type owl:ObjectProperty ;
+               rdfs:domain :Run ;
+               rdfs:range :Version ;
+               rdfs:label "performed with" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#realizedBy
+:realizedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Interface ;
+            rdfs:range :CollaborationElement ;
+            rdfs:label "realized by" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#refersTo
+:refersTo rdf:type owl:ObjectProperty ;
+          rdfs:domain :Requirement ;
+          rdfs:label "refers to" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#relatesTo
+:relatesTo rdf:type owl:ObjectProperty ;
+           rdfs:domain :View ;
+           rdfs:range :CollaborationElement ;
+           rdfs:label "relates to" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#satisfiedBy
+:satisfiedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :UseCase ;
+             rdfs:range :Requirement ;
+             rdfs:label "satisfied by" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#specificFor
+:specificFor rdf:type owl:ObjectProperty ;
+             rdfs:domain :View ;
+             rdfs:label "specific for" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#structurableBy
+:structurableBy rdf:type owl:ObjectProperty ;
+                rdfs:domain :Plan ,
+                            :Product ,
+                            :Project ;
+                rdfs:range :Structure ;
+                rdfs:label "structurable by" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#targetOf
+:targetOf rdf:type owl:ObjectProperty ;
+          rdfs:range :Requirement ;
+          rdfs:label "target of" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#usageDefinedBy
+:usageDefinedBy rdf:type owl:ObjectProperty ;
+                rdfs:domain :Product ;
+                rdfs:range :UseCase ;
+                rdfs:label "usage defined by" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#uses
+:uses rdf:type owl:ObjectProperty ;
+      rdfs:domain :CollaborationElement ;
+      rdfs:range :Interface ;
+      rdfs:label "uses" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#variedBy
+:variedBy rdf:type owl:ObjectProperty ;
+          rdfs:domain :Structure ;
+          rdfs:range :Variation ;
+          rdfs:label "varied by" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.prostep.org/ontologies/datamodel#configParameter
+:configParameter rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Configuration ;
+                 rdfs:range xsd:anyType ;
+                 rdfs:label "config parameter" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:domain :CollaborationElement ;
+             rdfs:range xsd:string ;
+             rdfs:label "description" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#end
+:end rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Product ;
+     rdfs:range xsd:date ;
+     rdfs:label "end" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#identifier
+:identifier rdf:type owl:DatatypeProperty ;
+            rdfs:domain :CollaborationElement ;
+            rdfs:range xsd:string ;
+            rdfs:label "identifier" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Product ;
+      rdfs:range xsd:string ;
+      rdfs:label "name" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#number
+:number rdf:type owl:DatatypeProperty ;
+        rdfs:domain :CollaborationElement ;
+        rdfs:range xsd:nonNegativeInteger ;
+        rdfs:label "number" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#start
+:start rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Product ;
+       rdfs:range xsd:date ;
+       rdfs:label "start" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#status
+:status rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Version ;
+        rdfs:label "status" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:domain :CollaborationElement ;
+       rdfs:range xsd:string ;
+       rdfs:label "title" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.prostep.org/ontologies/datamodel#CollaborationElement
+:CollaborationElement rdf:type owl:Class ;
+                      rdfs:label "Collaboration Element" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#Configuration
+:Configuration rdf:type owl:Class ;
+               rdfs:label "Configuration" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#Criteria
+:Criteria rdf:type owl:Class ;
+          rdfs:label "Criteria" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#FunctionalModel
+:FunctionalModel rdf:type owl:Class ;
+                 rdfs:subClassOf :Model ;
+                 rdfs:label "Functional Model" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#GeometricalModel
+:GeometricalModel rdf:type owl:Class ;
+                  rdfs:subClassOf :Model ;
+                  rdfs:label "Geometrical Model" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#Interface
+:Interface rdf:type owl:Class ;
+           rdfs:label "Interface" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#Model
+:Model rdf:type owl:Class ;
+       rdfs:subClassOf :CollaborationElement ;
+       rdfs:label "Model" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#Plan
+:Plan rdf:type owl:Class ;
+      rdfs:label "Plan" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#Product
+:Product rdf:type owl:Class ;
+         rdfs:label "Product" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#Project
+:Project rdf:type owl:Class ;
+         rdfs:label "Project" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#Requirement
+:Requirement rdf:type owl:Class ;
+             rdfs:subClassOf :CollaborationElement ;
+             rdfs:label "Requirement" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#ResponsiblePerson
+:ResponsiblePerson rdf:type owl:Class ;
+                   rdfs:label "Responsible Person" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#Result
+:Result rdf:type owl:Class ;
+        rdfs:subClassOf :CollaborationElement ;
+        rdfs:label "Result" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#Run
+:Run rdf:type owl:Class ;
+     rdfs:subClassOf :CollaborationElement ;
+     rdfs:label "Run" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#SimulationModel
+:SimulationModel rdf:type owl:Class ;
+                 rdfs:subClassOf :Model ;
+                 rdfs:label "Simulation Model" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#Structure
+:Structure rdf:type owl:Class ;
+           rdfs:label "Structure" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#SystemModel
+:SystemModel rdf:type owl:Class ;
+             rdfs:subClassOf :Model ;
+             rdfs:label "System Model" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#Task
+:Task rdf:type owl:Class ;
+      rdfs:label "Task" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#TechnicalPart
+:TechnicalPart rdf:type owl:Class ;
+               rdfs:subClassOf :CollaborationElement ;
+               rdfs:label "Technical Part" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#Test
+:Test rdf:type owl:Class ;
+      rdfs:subClassOf :CollaborationElement ;
+      rdfs:label "Test" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#UseCase
+:UseCase rdf:type owl:Class ;
+         rdfs:subClassOf :CollaborationElement ;
+         rdfs:label "Use Case" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#Variation
+:Variation rdf:type owl:Class ;
+           rdfs:label "Variation" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#Version
+:Version rdf:type owl:Class ;
+         rdfs:label "Version" .
+
+
+###  http://www.prostep.org/ontologies/datamodel#View
+:View rdf:type owl:Class ;
+      rdfs:label "View" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :FunctionalModel
+                :GeometricalModel
+                :SimulationModel
+                :SystemModel
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Model
+                :Requirement
+                :Result
+                :Run
+                :Task
+                :TechnicalPart
+                :Test
+                :UseCase
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
